@@ -1,0 +1,67 @@
+// Mixins
+@import "main-scss/mixins.scss";
+
+// Resettings, General styles
+@import "main-scss/fonts.scss";
+@import "main-scss/variables.scss";
+@import "main-scss/null.scss";
+
+body,
+html {
+	font-size: 10px;
+}
+
+body {
+	color: $dark;
+	background-color: $white;
+	font-family: $fontfamily;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $dark;
+	font-weight: 700;
+	font-family: inherit;
+}
+
+a {
+	font-size: 1.8rem;
+	line-height: 1.2;
+	color: $dark;
+	font-family: inherit;
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+// Main grid
+.container {
+	max-width: 144rem;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	padding: 0 4.8rem;
+}
+
+.container-header {
+	max-width: 144rem;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	padding: 0 6.4rem;
+}
+
+
+// Connecting pages style
+@import "main-scss/header.scss";
+@import "main-scss/footer.scss";
+// @import "main-scss/form.scss";
+@import "main-scss/btn.scss";
+
+@import "what-about.scss";
+@import "autosearch.scss";
+@import "cards.scss";

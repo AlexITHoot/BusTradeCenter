@@ -1,0 +1,80 @@
+.what-about {
+   padding-top: 10rem;
+
+   .wrapper {
+      display: flex;
+      margin-right: auto;
+      padding-left: 18.5rem;
+      padding-right: 15.5rem;
+
+      .block {
+         max-width: 85rem;
+         position: relative;
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: .5rem;
+            left: -18rem;
+            background: url(/img/bus.png) center/contain no-repeat;
+            width: 18rem;
+            height: 11rem;
+            z-index: -1;
+         }
+
+         &::after {
+            content: '';
+            position: absolute;
+            bottom: .5rem;
+            right: -15rem;
+            background: url(/img/hand.png) center/contain no-repeat;
+            width: 14.3rem;
+            height: 6.7rem;
+            z-index: -1;
+         }
+
+         h4,
+         p {
+            font-family: 'Merienda';
+            font-weight: 400;
+            color: #8E8E8E;
+            text-align: center;
+
+            a {
+               display: inline-flex;
+               color: #EE682E;
+            }
+         }
+
+         h4 {
+            font-size: 2.4rem;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            margin-bottom: 3.6rem;
+         }
+
+         p {
+            font-size: 1.9rem;
+            line-height: 1.85;
+
+            &:last-of-type {
+               text-align: end;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width:1200px) {
+   .about {
+      .wrapper {
+         .block {
+            p {
+               br {
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+}
