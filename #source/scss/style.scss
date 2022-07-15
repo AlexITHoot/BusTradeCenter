@@ -16,6 +16,7 @@ body {
 	background-color: $white;
 	font-family: $fontfamily;
 	overflow-x: hidden;
+	background: #F7F7F7;
 }
 
 .main-wrapper {
@@ -37,9 +38,10 @@ a {
 	line-height: 1.2;
 	color: $dark;
 	font-family: inherit;
+	transition: all .3s ease;
 
 	&:hover {
-		color: inherit;
+		color: $orange;
 	}
 }
 
@@ -61,8 +63,6 @@ a {
 }
 
 
-
-
 // Connecting pages style
 @import "main-scss/header.scss";
 @import "main-scss/footer.scss";
@@ -78,3 +78,4 @@ a {
 @import "cards.scss";
 
 @import "about.scss";
+@import "contact.scss";

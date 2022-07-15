@@ -77,6 +77,7 @@ body {
 	background-color: white;
 	font-family: "Montserrat", sans-serif;
 	overflow-x: hidden;
+	background: #F7F7F7;
 }
 
 .main-wrapper {
@@ -98,9 +99,12 @@ a {
 	line-height: 1.2;
 	color: #252525;
 	font-family: inherit;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 a:hover {
-	color: inherit;
+	color: #F15427;
 }
 
 .container {
@@ -194,6 +198,7 @@ a:hover {
 .footer {
 	width: 100%;
 	height: 10.4rem;
+	background: none;
 }
 .footer .wrapper {
 	display: -webkit-box;
@@ -288,6 +293,8 @@ a:hover {
 	font-weight: 400;
 	color: #252525;
 	padding: 1.8rem 1.6rem;
+	background: #FAFAFA;
+	border: 1px solid #F6F6F6;
 }
 .group input::-webkit-input-placeholder, .group textarea::-webkit-input-placeholder {
 	color: #252525;
@@ -307,7 +314,6 @@ a:hover {
 }
 .group.control input {
 	line-height: 1;
-	border: 1px solid #ECECEC;
 	border-radius: 0.8rem;
 }
 .group.textarea textarea {
@@ -713,19 +719,23 @@ a:hover {
 }
 
 .what-about {
+	background: white;
 	padding-top: 10rem;
 }
 .what-about .wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-right: auto;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding-left: 18.5rem;
-	padding-right: 15.5rem;
+	padding-right: 18.5rem;
 }
 .what-about .wrapper .block {
 	max-width: 85rem;
 	position: relative;
+	z-index: 2;
 }
 .what-about .wrapper .block::before {
 	content: "";
@@ -735,7 +745,7 @@ a:hover {
 	background: url(/img/bus.png) center/contain no-repeat;
 	width: 18rem;
 	height: 11rem;
-	z-index: -1;
+	z-index: 1;
 }
 .what-about .wrapper .block::after {
 	content: "";
@@ -745,7 +755,7 @@ a:hover {
 	background: url(/img/hand.png) center/contain no-repeat;
 	width: 14.3rem;
 	height: 6.7rem;
-	z-index: -1;
+	z-index: 1;
 }
 .what-about .wrapper .block h4,
 .what-about .wrapper .block p {
@@ -753,6 +763,7 @@ a:hover {
 	font-weight: 400;
 	color: #8E8E8E;
 	text-align: center;
+	z-index: inherit;
 }
 .what-about .wrapper .block h4 a,
 .what-about .wrapper .block p a {
@@ -781,6 +792,7 @@ a:hover {
 	}
 }
 .autosearch {
+	background: white;
 	padding-top: 15rem;
 }
 .autosearch .wrapper {
@@ -797,13 +809,14 @@ a:hover {
 	max-width: 70rem;
 	margin: 0 auto;
 	position: relative;
+	z-index: 2;
 }
 .autosearch .wrapper::before {
 	content: url(/img/magnifier.png);
 	position: absolute;
 	top: -1.5rem;
 	left: -14rem;
-	z-index: -1;
+	z-index: 1;
 }
 .autosearch .wrapper p {
 	text-align: center;
@@ -813,6 +826,7 @@ a:hover {
 	margin-bottom: 4.8rem;
 	background: white;
 	padding: 0 1.5rem;
+	z-index: inherit;
 }
 
 @media screen and (max-width: 1200px) {
@@ -970,4 +984,164 @@ a:hover {
 }
 .about .wrapper .bottom-content .img-wrapper img {
 	width: 100%;
+}
+
+.contact {
+	padding-bottom: 6.4rem;
+}
+.contact .prew-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 6.4rem;
+	margin-top: 3rem;
+}
+.contact .prew-wrapper .text-block {
+	width: 100%;
+	max-width: 54rem;
+}
+.contact .prew-wrapper .text-block h1 {
+	font-weight: 500;
+	font-size: 4.8rem;
+	line-height: 1.33;
+	color: #252525;
+	margin-bottom: 3rem;
+}
+.contact .prew-wrapper .text-block h4 {
+	font-weight: 400;
+	font-size: 2.4rem;
+	line-height: 1.5;
+	color: #555353;
+}
+.contact .prew-wrapper .img-wrapper {
+	max-width: 64rem;
+	border-radius: 0.8rem;
+	overflow: hidden;
+}
+.contact .prew-wrapper .img-wrapper img {
+	width: 100%;
+}
+.contact .contact-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 6.4rem;
+}
+.contact .contact-info > div {
+	position: relative;
+	margin-right: 7.7rem;
+	padding-right: 7.7rem;
+}
+.contact .contact-info > div:last-of-type {
+	margin-right: 0;
+	padding-right: 0;
+}
+.contact .contact-info > div:last-of-type::before {
+	content: none;
+}
+.contact .contact-info > div:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	background: rgba(0, 0, 0, 0.1019607843);
+}
+.contact .contact-info > div h4 {
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 1.5;
+	color: #252525;
+	margin-bottom: 0.8rem;
+}
+.contact .contact-info > div p {
+	font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 1.43;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #555353;
+	margin-bottom: 2.4rem;
+}
+.contact .contact-info > div > div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	margin-bottom: 2rem;
+}
+.contact .contact-info > div > div img {
+	margin-right: 1.8rem;
+}
+.contact .contact-info > div > div a {
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 1.5;
+	color: #555353;
+}
+.contact .contact-info > div > div a:hover {
+	color: #F15427;
+}
+.contact .form-wrapper {
+	padding: 6.4rem 5.6rem;
+	background: white;
+	border-radius: 0.8rem;
+}
+.contact .form-wrapper h2 {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 48px;
+	color: #252525;
+	margin-bottom: 4.8rem;
+}
+.contact .form-wrapper .group-wrapper {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-bottom: 3rem;
+}
+.contact .form-wrapper .group-wrapper:last-of-type {
+	margin-bottom: 0;
+}
+.contact .form-wrapper .group-wrapper:last-of-type .btn {
+	margin-left: auto;
+}
+.contact .form-wrapper .group-wrapper .group.check label {
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	color: #555353;
+}
+.contact .form-wrapper .group-wrapper .group.check label a {
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	text-decoration: underline;
+	-webkit-text-decoration-color: currentcolor;
+	        text-decoration-color: currentcolor;
+	margin-left: 0.5rem;
+}
+.contact .form-wrapper .group-wrapper textarea {
+	height: 18rem;
+}
+.contact .form-wrapper .group-wrapper > div {
+	width: 33.3%;
+	min-width: 25rem;
+	padding-right: 3em;
+}
+.contact .form-wrapper .group-wrapper > div:last-of-type {
+	padding-right: 0;
 }
