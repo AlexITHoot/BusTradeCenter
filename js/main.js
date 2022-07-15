@@ -2737,50 +2737,35 @@ new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
   select: '#slim-select',
   showSearch: false
 });
-var slider = document.querySelector('.range-slider'); // noUiSlider.create(slider,{
-//         start: [200, 80000],
-//         connect: true,
-//         behaviour: 'tap',
-//         tooltips: [true, true],
-//         range: {
-//             'min': 0,
-//             'max': 100000
-//         }   
-// })
-// slider.forEach((item)=>{
-// });
-// let Option = function(){
-//   this.start = start,
-//   this.range = range,
-// }
-// class MyOption {
-//   constructor(start,range){
-//     this.start = start,
-//     this.range = range
-//   }
-// }
-// let y = new MyOption([0,100],{'min': 0,'max': 100000});
-// let y2 
+document.addEventListener("DOMContentLoaded", function () {
+  var jsRange = document.querySelectorAll('.js-range');
 
-var c = {
-  start: [100, 800],
-  connect: true,
-  behaviour: 'tap',
-  tooltips: [wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
-    decimals: 0
-  }), wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
-    decimals: 0
-  })],
-  range: {
-    'min': 0,
-    'max': 1000
+  if (jsRange.length > 0) {
+    jsRange.forEach(function (e) {
+      nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(e, {
+        start: [e.getAttribute('data-noui-min') || 0, e.getAttribute('data-noui-max') || 0],
+        step: Number(e.getAttribute('data-noui-step') || 10),
+        margin: 0,
+        connect: true,
+        direction: "ltr",
+        orientation: "horizontal",
+        behaviour: "tap-drag",
+        tooltips: [wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
+          decimals: 0
+        }), wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
+          decimals: 0
+        })],
+        range: {
+          min: Number(e.getAttribute('data-noui-min') || 0),
+          max: Number(e.getAttribute('data-noui-max') || 0)
+        },
+        format: wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
+          decimals: 0
+        })
+      });
+    });
   }
-}; // noUiSlider.create(slider, c);   
-
-var x = nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(slider, c);
-console.log(x); // item[0]={
-//   start: [200, 800],
-// }
+});
 }();
 /******/ })()
 ;

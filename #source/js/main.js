@@ -7,48 +7,28 @@ new SlimSelect({
   showSearch: false,
 })
 
-var slider = document.querySelector('.range-slider');
+document.addEventListener("DOMContentLoaded", () => {
+  let jsRange = document.querySelectorAll('.js-range');
 
-// noUiSlider.create(slider,{
-//         start: [200, 80000],
-//         connect: true,
-//         behaviour: 'tap',
-//         tooltips: [true, true],
-//         range: {
-//             'min': 0,
-//             'max': 100000
-//         }   
-// })
-  // slider.forEach((item)=>{
-   
-  // });
-  // let Option = function(){
-  //   this.start = start,
-  //   this.range = range,
-  // }
-  // class MyOption {
-  //   constructor(start,range){
-  //     this.start = start,
-  //     this.range = range
-  //   }
-  // }
-
-  // let y = new MyOption([0,100],{'min': 0,'max': 100000});
-  // let y2 
-
-    let c = {
-        start: [100, 800],
+  if (jsRange.length > 0) {
+    jsRange.forEach((e) => {
+      noUiSlider.create(e, {
+        start: [e.getAttribute('data-noui-min') || 0, e.getAttribute('data-noui-max') || 0],
+        step: Number(e.getAttribute('data-noui-step') || 10),
+        margin: 0,
         connect: true,
-        behaviour: 'tap',
-        tooltips: [wNumb({decimals: 0}), wNumb({decimals: 0})],
+        direction: "ltr",
+        orientation: "horizontal",
+        behaviour: "tap-drag",
+        tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
         range: {
-            'min': 0,
-            'max': 1000
-        }
-    }
-    // noUiSlider.create(slider, c);   
-    let x = noUiSlider.create(slider,c);
-    console.log(x);
-// item[0]={
-//   start: [200, 800],
-// }
+          min: Number(e.getAttribute('data-noui-min') || 0),
+          max: Number(e.getAttribute('data-noui-max') || 0)
+        },
+        format: wNumb({
+          decimals: 0
+        })
+      });
+    })
+  }
+});
