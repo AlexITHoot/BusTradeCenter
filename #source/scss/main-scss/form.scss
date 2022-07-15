@@ -19,6 +19,7 @@
 		color: $dark;
 		padding: 1.8rem 1.6rem;
 		background: $light-gray;
+		border: 1px solid #F6F6F6;
 
 		&::placeholder {
 			color: $dark;
@@ -28,7 +29,6 @@
 	&.control {
 		input {
 			line-height: 1;
-			border: 1px solid #ECECEC;
 			border-radius: .8rem;
 		}
 	}
