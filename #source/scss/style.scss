@@ -61,6 +61,8 @@ a {
 }
 
 
+
+
 // Connecting pages style
 @import "main-scss/header.scss";
 @import "main-scss/footer.scss";
@@ -68,9 +70,12 @@ a {
 @import "main-scss/btn.scss";
 @import "main-scss/range-slider.scss";
 
+@import "breadcrumbs.scss";
 @import "product-card.scss";
 
 @import "main-screen.scss";
 @import "what-about.scss";
 @import "autosearch.scss";
 @import "cards.scss";
+
+@import "about.scss";

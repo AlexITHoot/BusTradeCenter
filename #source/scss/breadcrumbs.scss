@@ -1,0 +1,43 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	padding: 3.2rem 0 0 0;
+
+	a {
+		font-family: 'Montserrat';
+		font-weight: 400;
+		font-size: 1.2rem;
+		line-height: 1.5;
+		position: relative;
+		color: #55535380;
+		margin-right: .7rem;
+		padding-right: .7rem;
+
+		&:hover {
+			color: $dark;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: -.2rem;
+			top: 50%;
+			width: .3rem;
+			height: .4rem;
+			background: url(/img/icons/bredcrumbs-arr.svg) center center no-repeat;
+			transform: translateY(-50%);
+		}
+
+		&:last-of-type {
+			margin-right: 0;
+
+			&::after {
+				content: none;
+			}
+		}
+
+		&.cur-page {
+			color: $dark;
+		}
+	}
+}
