@@ -18,6 +18,7 @@
 		font-weight: 400;
 		color: $dark;
 		padding: 1.8rem 1.6rem;
+		background: $light-gray;
 
 		&::placeholder {
 			color: $dark;
@@ -107,6 +108,58 @@
 
 		.checkbox:disabled+.form-label::before {
 			background-color: #e9ecef;
+		}
+	}
+
+	&.select {
+		.ss-main {
+			.ss-single-selected {
+				font-family: 'Montserrat';
+				font-size: 1.6rem;
+				font-weight: 400;
+				color: $dark;
+				padding: 1.8rem 1.6rem;
+				line-height: 1;
+				height: auto;
+				border: 1px solid #ECECEC;
+				border-radius: 0.8rem;
+				align-items: center;
+				background: $light-gray;
+
+				.placeholder {
+					display: inline-block;
+					background-color: transparent;
+					cursor: pointer;
+					opacity: 1;
+				}
+
+				.ss-arrow {
+
+					span {
+						content: url('/img/icons/swiper/arr-small-left.svg');
+						border: none;
+						padding: 0;
+						transform-origin: 50% 50%;
+
+						&.arrow-down {
+							transform: rotate(-90deg);
+						}
+
+						&.arrow-up {
+							transform: rotate(90deg);
+							margin: 0;
+						}
+					}
+				}
+			}
+
+			.ss-content {
+				.ss-list {
+					.ss-option {
+						font-size: 1.4rem;
+					}
+				}
+			}
 		}
 	}
 }

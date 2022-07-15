@@ -4,6 +4,7 @@
   "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
   "dependencies": {
     "nouislider": "^15.6.0",
-    "slim-select": "^1.27.1"
+    "slim-select": "^1.27.1",
+    "wnumb": "^1.2.0"
   }
 }
