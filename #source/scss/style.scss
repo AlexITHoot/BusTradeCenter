@@ -61,15 +61,20 @@ a {
 }
 
 
+
+
 // Connecting pages style
 @import "main-scss/header.scss";
 @import "main-scss/footer.scss";
 @import "main-scss/form.scss";
 @import "main-scss/btn.scss";
 
+@import "breadcrumbs.scss";
 @import "product-card.scss";
 
 @import "main-screen.scss";
 @import "what-about.scss";
 @import "autosearch.scss";
 @import "cards.scss";
+
+@import "about.scss";
