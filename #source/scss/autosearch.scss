@@ -33,12 +33,36 @@
 }
 
 @media screen and (max-width:1200px) {
-	.about {
+	.autosearch {
 		.wrapper {
 			p {
 				br {
 					display: none;
 				}
+			}
+		}
+	}
+}
+
+@include respond(lg-screen) {
+	.autosearch {
+		padding-top: 10rem;
+	}
+}
+
+@include respond(m-screen) {
+	.autosearch {
+		padding-top: 5rem;
+
+		.wrapper {
+			&::before {
+				content: none;
+			}
+
+			p {
+				font-size: 2rem;
+				margin-bottom: 3rem;
+				padding: 0;
 			}
 		}
 	}

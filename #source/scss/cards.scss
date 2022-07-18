@@ -69,3 +69,25 @@
       }
    }
 }
+
+@include respond(lg-screen) {
+   .cards {
+      .container {
+         .cards-global {
+            padding: 0 3rem;
+            margin: 0px -2rem;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .cards {
+      .container {
+         .cards-global {
+            padding: 0px 1rem;
+            margin: 0px 2rem;
+         }
+      }
+   }
+}

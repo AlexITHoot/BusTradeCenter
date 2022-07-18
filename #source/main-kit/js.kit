@@ -6,15 +6,36 @@
 <script src="js/main.js"></script>
 
 
-
 <script>
 	var swiper = new Swiper(".cards-global", {
-		slidesPerView: 4,
-		slidesPerGroup: 4,
-		spaceBetween: 40,
+		slidesPerView: 1,
+		spaceBetween: 20,
+		slidesPerGroup: 1,
 		navigation: {
 			nextEl: ".swiper-button-next.swiper-global",
 			prevEl: ".swiper-button-prev.swiper-global"
+		},
+		breakpoints: {
+			575: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				slidesPerGroup: 2,
+			},
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				slidesPerGroup: 2,
+			},
+			991: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerGroup: 3,
+			},
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 40,
+				slidesPerGroup: 4,
+			}
 		}
 	});
 

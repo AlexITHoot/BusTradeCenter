@@ -60,17 +60,17 @@
 	}
 }
 
-// @include respond(m-screen) {
-// 	.header {
-// 		height: 7rem;
+@include respond(m-screen) {
+	.header {
+		height: 7rem;
 
-// 		.wrapper {
-// 			.nav-menu {
-// 				.nav-link {
-// 					margin: 0 .5rem;
-// 					padding: 0 .5rem;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+		.wrapper {
+			.nav-menu {
+				.nav-link {
+					margin: 0 .5rem;
+					padding: 0 .5rem;
+				}
+			}
+		}
+	}
+}
