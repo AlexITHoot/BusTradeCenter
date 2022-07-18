@@ -19,7 +19,8 @@
 		color: $dark;
 		padding: 1.8rem 1.6rem;
 		background: $light-gray;
-		border: 1px solid #F6F6F6;
+		border: 1px solid #ECECEC;
+		border-radius: 0.8rem;
 
 		&::placeholder {
 			color: $dark;
@@ -143,6 +144,7 @@
 
 						&.arrow-down {
 							transform: rotate(-90deg);
+							margin: 0;
 						}
 
 						&.arrow-up {

@@ -2733,9 +2733,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  select: '#slim-select',
-  showSearch: false
+var slimSelect = document.querySelectorAll('.slim-select');
+slimSelect.forEach(function (el) {
+  new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    select: el,
+    showSearch: false
+  });
 });
 document.addEventListener("DOMContentLoaded", function () {
   var jsRange = document.querySelectorAll('.js-range');
