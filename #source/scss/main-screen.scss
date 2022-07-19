@@ -87,3 +87,71 @@
 		}
 	}
 }
+
+@include respond(lg-screen) {
+	.main-screen {
+		.wrapper {
+			.right-block {
+				margin-right: 6rem;
+
+				h1 {
+					font-size: 4.8rem;
+					margin-bottom: 2rem;
+				}
+
+				h2 {
+					padding-right: 1rem;
+					margin-right: 0;
+					font-size: 3.6rem;
+				}
+
+				.img-wrapper {
+					left: 0;
+					margin-right: 0;
+
+					img {
+						border-radius: 20%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond(m-screen) {
+	.main-screen {
+		max-height: initial;
+
+		.wrapper {
+			flex-wrap: wrap;
+
+			.form-block {
+				width: 100%;
+				max-width: initial;
+				margin-right: 0;
+				order: 2;
+			}
+
+			.right-block {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@include respond(es-screen) {
+	.main-screen {
+		.wrapper {
+			.right-block {
+				h1 {
+					font-size: 3.6rem;
+					margin-bottom: 2rem;
+				}
+
+				h2 {	
+					font-size: 2.8rem;
+				}
+			}
+		}
+	}
+}
