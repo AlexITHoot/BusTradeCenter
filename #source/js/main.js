@@ -2,10 +2,15 @@ import noUiSlider from 'nouislider';
 import SlimSelect from 'slim-select';
 import wNumb from 'wnumb';
 
-new SlimSelect({
-  select: '#slim-select',
-  showSearch: false,
+let slimSelect = document.querySelectorAll('.slim-select');
+
+slimSelect.forEach((el) => {
+  new SlimSelect({
+    select: el,
+    showSearch: false,
+  })
 })
+
 
 document.addEventListener("DOMContentLoaded", () => {
   let jsRange = document.querySelectorAll('.js-range');
