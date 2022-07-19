@@ -8,89 +8,53 @@
 
 		form {
 			display: flex;
+			justify-content: space-between;
 			flex-wrap: wrap;
 
 			.group {
-				width: 50%;
-				padding-right: 2rem;
+				width: 48.7%;
+				margin-bottom: 3rem;
+
+				label {
+					margin-bottom: 1.2rem;
+				}
+
+				&.textarea {
+					textarea {
+						height: 15rem;
+					}
+				}
+
+				&.control,
+				&.textarea {
+					label {
+						color: #000;
+					}
+				}
+			}
+
+			.btn {
+				margin-left: auto;
 			}
 		}
 	}
 }
 
-// @include respond(lg-screen) {
-// 	.contact {
-// 		padding-bottom: 5rem;
 
-// 		.contact-info {
-// 			flex-wrap: wrap;
-// 			margin-bottom: 5rem;
 
-// 			>div {
-// 				width: 100%;
-// 				margin: 0 0 2.5rem 5rem;
-// 				padding: 0 0 0 5rem;
+@include respond(m-screen) {
+	.autosearch {
+		padding-bottom: 5rem;
 
-// 				&:before {
-// 					content: '' !important;
-// 					left: 0;
-// 					right: auto;
-// 				}
+		.form-wrapper {
+			padding: 2.5rem 2.5rem 3rem 2.5rem;
 
-// 				>div {
-// 					margin-bottom: 0;
-// 				}
-// 			}
-// 		}
+			form {
 
-// 		.form-wrapper {
-// 			padding: 5rem 4rem;
-
-// 			h2 {
-// 				margin-bottom: 3rem;
-// 			}
-
-// 			.group-wrapper {
-// 				>div {
-// 					width: 50%;
-// 					margin-bottom: 2rem;
-
-// 					&:nth-last-of-type(2) {
-// 						padding-right: 0;
-// 					}
-
-// 					&:last-of-type {
-// 						padding-right: 0;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// @include respond(m-screen) {
-// 	.contact {
-// 		.contact-info {
-// 			>div {
-// 				margin: 0 0 2.5rem 1rem;
-// 				padding: 0 0 0 2.5rem;
-// 			}
-// 		}
-
-// 		.form-wrapper {
-// 			padding: 3rem 2rem;
-
-// 			.group-wrapper {
-// 				.group.check {
-// 					width: 100%;
-// 				}
-
-// 				>div {
-// 					width: 100%;
-// 					margin-bottom: 2rem;
-// 					padding-right: 0;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				.group {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

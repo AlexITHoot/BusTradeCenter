@@ -9,8 +9,7 @@ slimSelect.forEach((el) => {
     select: el,
     showSearch: false,
   })
-})
-
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   let jsRange = document.querySelectorAll('.js-range');
@@ -34,6 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
           decimals: 0
         })
       });
+      e.noUiSlider.on("update", function (values) {
+        e.closest(".range").querySelector('.slider-value-min').value = values[0];
+        e.closest(".range").querySelector('.slider-value-max').value = values[1];
+      });
+      e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
+        e.noUiSlider.set([this.value, null]);
+      });
+      e.closest(".range").querySelector('.slider-value-max').addEventListener('change', function () {
+        e.noUiSlider.set([null, this.value]);
+      });
     })
   }
 });
+

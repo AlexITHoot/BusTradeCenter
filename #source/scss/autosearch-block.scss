@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width:1200px) {
-	.autosearch {
+	.autosearch-block {
 		.wrapper {
 			p {
 				br {
@@ -45,13 +45,13 @@
 }
 
 @include respond(lg-screen) {
-	.autosearch {
+	.autosearch-block {
 		padding-top: 10rem;
 	}
 }
 
 @include respond(m-screen) {
-	.autosearch {
+	.autosearch-block {
 		padding-top: 5rem;
 
 		.wrapper {

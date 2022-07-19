@@ -69,6 +69,14 @@ a {
 	height: 100%;
 	width: 100%;
 	padding: 0 6.4rem;
+
+	@include respond(lg-screen) {
+		padding: 0 3rem;
+	}
+
+	@include respond(m-screen) {
+		padding: 0 1.5rem;
+	}
 }
 
 
