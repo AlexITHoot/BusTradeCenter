@@ -2,6 +2,9 @@ import noUiSlider from 'nouislider';
 import SlimSelect from 'slim-select';
 import wNumb from 'wnumb';
 
+
+//Slimselect
+
 let slimSelect = document.querySelectorAll('.slim-select');
 
 slimSelect.forEach((el) => {
@@ -11,6 +14,8 @@ slimSelect.forEach((el) => {
   })
 })
 
+
+//NoUISlider
 
 document.addEventListener("DOMContentLoaded", () => {
   let jsRange = document.querySelectorAll('.js-range');
@@ -37,3 +42,22 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 });
+
+
+//Catalog view switcher
+
+let catalogViewSwitchList = document.querySelectorAll('.catalog-view__switch a');
+
+catalogViewSwitchList.forEach((el) => {
+
+  el.addEventListener('click', function (e) {
+    e.preventDefault();
+    catalogViewSwitchList.forEach((el) => {
+      el.classList.remove('active');
+    })
+    if (!el.classList.contains('active')) {
+      el.classList.add('active');
+    }
+  })
+
+})

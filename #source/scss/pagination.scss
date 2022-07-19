@@ -1,0 +1,34 @@
+.pagination {
+  .page-item {
+    .page-link {
+      min-width: 4rem;
+      height: 4rem;
+      border-radius: 0.8rem;
+      border: 1px solid rgba($gray, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      background: none;
+      color: $gray;
+      font-size: 1.6rem;
+      font-weight: 500;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+
+    &.active {
+      .page-link {
+        color: $blue;
+        background: rgba($blue, 0.1);
+        border-color: transparent;
+      }
+    }
+  }
+}
