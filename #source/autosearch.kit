@@ -74,14 +74,35 @@
 								<label for="">Year</label>
 								<div class="value-wrapper">
 									<input class="slider-value-min" type="text">
+									<!-- <div class="group select">
+										<select class="slim-select slider-value-min" id="year">
+											<option value="value 1">1997</option>
+											<option value="value 2">1998</option>
+											<option value="value 3">1999</option>
+										</select>
+									</div> -->
 									<span>-</span>
+									<!-- <div class="group select">
+										<select class="slim-select slider-value-max" id="year">
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+										</select>
+									</div> -->
 									<input class="slider-value-max" type="text">
 								</div>
 								<div class="range-slider js-range" data-noui-min="1997" data-noui-max="2022" data-noui-step="1">
 								</div>
 							</div>
 							<div class="group range">
-								<label for="">Price from-to</label>
+								<div class="group-wrapper">
+									<label for="">Price from-to</label>
+									<div class="price-changer">
+										<button class="price active">SEK</button>
+										<button class="price">EUR</button>
+										<button class="price">USD</button>
+									</div>
+								</div>
 								<div class="value-wrapper">
 									<input class="slider-value-min" type="text">
 									<span>-</span>
@@ -129,7 +150,6 @@
 									<option value="value 3">Value 333333333333 444444 5666666666</option>
 								</select>
 							</div>
-
 							<div class="group control w-100">
 								<label for="model">Email</label>
 								<input id="model" type="mail" placeholder="Your email address">
