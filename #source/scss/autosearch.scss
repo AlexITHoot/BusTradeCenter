@@ -1,69 +1,96 @@
 .autosearch {
-	background: $white;
-	padding-top: 15rem;
+	padding-bottom: 10rem;
 
-	.wrapper {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		max-width: 70rem;
-		margin: 0 auto;
-		position: relative;
-		z-index: 2;
+	.form-wrapper {
+		padding: 6.4rem 6.4rem 10rem 6.4rem;
+		background: $white;
+		border-radius: .8rem;
 
-		&::before {
-			content: url(/img/magnifier.png);
-			position: absolute;
-			top: -1.5rem;
-			left: -14rem;
-			z-index: 1;
-		}
+		form {
+			display: flex;
+			flex-wrap: wrap;
 
-		p {
-			text-align: center;
-			color: #55535399;
-			font-size: 2.4rem;
-			line-height: 1.5;
-			margin-bottom: 4.8rem;
-			background: $white;
-			padding: 0 1.5rem;
-			z-index: inherit;
-		}
-	}
-}
-
-@media screen and (max-width:1200px) {
-	.autosearch {
-		.wrapper {
-			p {
-				br {
-					display: none;
-				}
+			.group {
+				width: 50%;
+				padding-right: 2rem;
 			}
 		}
 	}
 }
 
-@include respond(lg-screen) {
-	.autosearch {
-		padding-top: 10rem;
-	}
-}
+// @include respond(lg-screen) {
+// 	.contact {
+// 		padding-bottom: 5rem;
 
-@include respond(m-screen) {
-	.autosearch {
-		padding-top: 5rem;
+// 		.contact-info {
+// 			flex-wrap: wrap;
+// 			margin-bottom: 5rem;
 
-		.wrapper {
-			&::before {
-				content: none;
-			}
+// 			>div {
+// 				width: 100%;
+// 				margin: 0 0 2.5rem 5rem;
+// 				padding: 0 0 0 5rem;
 
-			p {
-				font-size: 2rem;
-				margin-bottom: 3rem;
-				padding: 0;
-			}
-		}
-	}
-}
+// 				&:before {
+// 					content: '' !important;
+// 					left: 0;
+// 					right: auto;
+// 				}
+
+// 				>div {
+// 					margin-bottom: 0;
+// 				}
+// 			}
+// 		}
+
+// 		.form-wrapper {
+// 			padding: 5rem 4rem;
+
+// 			h2 {
+// 				margin-bottom: 3rem;
+// 			}
+
+// 			.group-wrapper {
+// 				>div {
+// 					width: 50%;
+// 					margin-bottom: 2rem;
+
+// 					&:nth-last-of-type(2) {
+// 						padding-right: 0;
+// 					}
+
+// 					&:last-of-type {
+// 						padding-right: 0;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @include respond(m-screen) {
+// 	.contact {
+// 		.contact-info {
+// 			>div {
+// 				margin: 0 0 2.5rem 1rem;
+// 				padding: 0 0 0 2.5rem;
+// 			}
+// 		}
+
+// 		.form-wrapper {
+// 			padding: 3rem 2rem;
+
+// 			.group-wrapper {
+// 				.group.check {
+// 					width: 100%;
+// 				}
+
+// 				>div {
+// 					width: 100%;
+// 					margin-bottom: 2rem;
+// 					padding-right: 0;
+// 				}
+// 			}
+// 		}
+// 	}
+// }

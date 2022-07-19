@@ -1,5 +1,5 @@
 import noUiSlider from 'nouislider';
-import SlimSelect from 'slim-select'
+import SlimSelect from 'slim-select';
 import wNumb from 'wnumb';
 
 new SlimSelect({

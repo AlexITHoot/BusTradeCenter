@@ -1,0 +1,69 @@
+.autosearch-block {
+	background: $white;
+	padding-top: 15rem;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 70rem;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+
+		&::before {
+			content: url(/img/magnifier.png);
+			position: absolute;
+			top: -1.5rem;
+			left: -14rem;
+			z-index: 1;
+		}
+
+		p {
+			text-align: center;
+			color: #55535399;
+			font-size: 2.4rem;
+			line-height: 1.5;
+			margin-bottom: 4.8rem;
+			background: $white;
+			padding: 0 1.5rem;
+			z-index: inherit;
+		}
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.autosearch {
+		.wrapper {
+			p {
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@include respond(lg-screen) {
+	.autosearch {
+		padding-top: 10rem;
+	}
+}
+
+@include respond(m-screen) {
+	.autosearch {
+		padding-top: 5rem;
+
+		.wrapper {
+			&::before {
+				content: none;
+			}
+
+			p {
+				font-size: 2rem;
+				margin-bottom: 3rem;
+				padding: 0;
+			}
+		}
+	}
+}

@@ -14,8 +14,35 @@
 
 <body>
 	<div class="main-wrapper">
-		<!-- @import "main-kit/header.kit" -->
-		<div class="content-wrapper">
+<header class="header">
+	<div class="container-header">
+		<div class="wrapper">
+			<div class="right-block">
+				<div class="logo">
+					<img src="/img/icons/logo.svg" alt="logo">
+				</div>
+				<div class="language-selector">
+					<div class="language">
+						<a href="#"><img src="/img/icons/united-kingdom.svg" alt="united-kingdom-language"></a>
+					</div>
+					<div class="language">
+						<a href="#"><img src="/img/icons/sweden.svg" alt="sweden-language"></a>
+					</div>
+					<div class="language">
+						<a href="#"><img src="/img/icons/russia.svg" alt="russia-language"></a>
+					</div>
+				</div>
+			</div>
+			<nav class="nav-menu">
+				<a href="#" class="nav-link">Home</a>
+				<a href="#" class="nav-link">About</a>
+				<a href="#" class="nav-link">Autosearch</a>
+				<a href="#" class="nav-link">Sell</a>
+				<a href="#" class="nav-link">Contact</a>
+			</nav>
+		</div>
+	</div>
+</header>		<div class="content-wrapper">
 			<section class="autosearch">
 				<div class="container">
 					<div class="breadcrumbs">
@@ -87,9 +114,81 @@
 				</div>
 			</section>
 		</div>
-		<!-- @import "main-kit/footer.kit" -->
-	</div>
-	<!-- @import "main-kit/js.kit" -->
-</body>
+<footer class="footer">
+   <div class="container">
+      <div class="wrapper">
+         <div class="right-block">
+            <div class="item">
+               <img src="/img/icons/home.svg" alt="home">
+               <a href="#">Girovägen 1, 17562 Järfälla</a>
+            </div>
+            <div class="item">
+               <img src="/img/icons/mail.svg" alt="mail">
+               <a href="#">info@bustradecenter.com</a>
+            </div>
+         </div>
+         <div class="item">
+            <h5>© Copyright 2021. BTC</h5>
+         </div>
+      </div>
+   </div>
+</footer>	</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+
+<script>
+	var swiper = new Swiper(".cards-global", {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		slidesPerGroup: 1,
+		navigation: {
+			nextEl: ".swiper-button-next.swiper-global",
+			prevEl: ".swiper-button-prev.swiper-global"
+		},
+		breakpoints: {
+			575: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				slidesPerGroup: 2,
+			},
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				slidesPerGroup: 2,
+			},
+			991: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerGroup: 3,
+			},
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 40,
+				slidesPerGroup: 4,
+			}
+		}
+	});
+
+	var swiper = new Swiper(".card-images", {
+		paginationClickable: true,
+		slidesPerView: 1,
+		spaceBetween: 10,
+		allowTouchMove: false,
+		loop: true,
+		navigation: {
+			nextEl: ".swiper-button-next.swiper-image",
+			prevEl: ".swiper-button-prev.swiper-image",
+		},
+		pagination: {
+			el: ".swiper-pagination.swiper-image",
+			clickable: true,
+		},
+	});
+</script></body>
 
 </html>
