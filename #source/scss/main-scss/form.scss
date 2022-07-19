@@ -19,7 +19,7 @@
 		color: $dark;
 		padding: 1.8rem 1.6rem;
 		background: $light-gray;
-		border: 1px solid #ECECEC;
+		border: 1px solid #F6F6F6;
 		border-radius: 0.8rem;
 
 		&::placeholder {
@@ -162,6 +162,26 @@
 						font-size: 1.4rem;
 					}
 				}
+			}
+		}
+	}
+
+	&.range {
+		.value-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			input {
+				width: 48%;
+			}
+
+			span {
+				font-family: 'Poppins';
+				font-weight: 400;
+				font-size: 1.6rem;
+				line-height: 1.3;
+				color: #000000;
 			}
 		}
 	}
