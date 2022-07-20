@@ -208,6 +208,26 @@
 			clickable: true,
 		},
 	});
+
+	var swiperSmall = new Swiper(".card-img-small", {
+		loop: true,
+		spaceBetween: 10,
+		slidesPerView: 4,
+		slidesPerGroup: 4,
+	});
+
+	var swiperBig = new Swiper(".card-img-big", {
+		loop: true,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: swiperSmall,
+		},
+	});
+
 </script></body>
 
 </html>
