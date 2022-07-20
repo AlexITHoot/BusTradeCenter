@@ -916,6 +916,9 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.group.range .value-wrapper .group {
+  margin-bottom: 0;
+}
 .group.range .value-wrapper input {
   width: 48%;
 }

@@ -2732,21 +2732,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var wnumb__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wnumb__WEBPACK_IMPORTED_MODULE_2__);
 
 
- //Slimselect
 
-var slimSelect = document.querySelectorAll('.slim-select');
-slimSelect.forEach(function (el) {
+
+
+//Slimselect
+
+let slimSelect = document.querySelectorAll('.slim-select');
+
+slimSelect.forEach((el) => {
   new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
     select: el,
-    showSearch: false
-  });
-}); //NoUISlider
+    showSearch: false,
+  })
+});
 
-document.addEventListener("DOMContentLoaded", function () {
-  var jsRange = document.querySelectorAll('.js-range');
+//NoUISlider
+
+document.addEventListener("DOMContentLoaded", () => {
+  let jsRange = document.querySelectorAll('.js-range');
 
   if (jsRange.length > 0) {
-    jsRange.forEach(function (e) {
+    jsRange.forEach((e) => {
       nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(e, {
         start: [e.getAttribute('data-noui-min') || 0, e.getAttribute('data-noui-max') || 0],
         step: Number(e.getAttribute('data-noui-step') || 10),
@@ -2755,11 +2761,7 @@ document.addEventListener("DOMContentLoaded", function () {
         direction: "ltr",
         orientation: "horizontal",
         behaviour: "tap-drag",
-        tooltips: [wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
-          decimals: 0
-        }), wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
-          decimals: 0
-        })],
+        tooltips: [wnumb__WEBPACK_IMPORTED_MODULE_2___default()({ decimals: 0 }), wnumb__WEBPACK_IMPORTED_MODULE_2___default()({ decimals: 0 })],
         range: {
           min: Number(e.getAttribute('data-noui-min') || 0),
           max: Number(e.getAttribute('data-noui-max') || 0)
@@ -2769,32 +2771,41 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       });
       e.noUiSlider.on("update", function (values) {
-        e.closest(".range").querySelector('.slider-value-min').value = values[0];
-        e.closest(".range").querySelector('.slider-value-max').value = values[1];
+        if (e.closest(".range")) {
+          e.closest(".range").querySelector('.slider-value-min').value = values[0];
+          e.closest(".range").querySelector('.slider-value-max').value = values[1];
+          
+          e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
+            e.noUiSlider.set([this.value, null]);
+          });
+          e.closest(".range").querySelector('.slider-value-max').addEventListener('change', function () {
+            e.noUiSlider.set([null, this.value]);
+          });
+        }
       });
-      e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
-        e.noUiSlider.set([this.value, null]);
-      });
-      e.closest(".range").querySelector('.slider-value-max').addEventListener('change', function () {
-        e.noUiSlider.set([null, this.value]);
-      });
-    });
+    })
   }
-}); //Catalog view switcher
+});
 
-var catalogViewSwitchList = document.querySelectorAll('.catalog-view__switch a');
-catalogViewSwitchList.forEach(function (el) {
+
+//Catalog view switcher
+
+let catalogViewSwitchList = document.querySelectorAll('.catalog-view__switch a');
+
+catalogViewSwitchList.forEach((el) => {
+
   el.addEventListener('click', function (e) {
     e.preventDefault();
-    catalogViewSwitchList.forEach(function (el) {
+    catalogViewSwitchList.forEach((el) => {
       el.classList.remove('active');
-    });
-
+    })
     if (!el.classList.contains('active')) {
       el.classList.add('active');
     }
-  });
-});
+  })
+
+})
+
 }();
 /******/ })()
 ;

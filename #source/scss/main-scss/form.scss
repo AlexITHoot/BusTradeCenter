@@ -172,6 +172,10 @@
 			align-items: center;
 			justify-content: space-between;
 
+			.group {
+				margin-bottom: 0;
+			}
+
 			input {
 				width: 48%;
 			}
