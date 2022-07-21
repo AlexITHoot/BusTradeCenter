@@ -166,6 +166,53 @@ a {
 	}
 }
 
+.compare {
+	bottom: 5rem;
+	right: 5rem;
+	position: fixed;
+	z-index: 100;
+
+	>div {
+		background: #85BBF5;
+		border-radius: 50%;
+		padding: 1.4rem;
+		position: relative;
+
+		span {
+			position: absolute;
+			top: 0;
+			right: -1rem;
+			background: $white;
+			padding: 0.5rem 0.7rem;
+			border-radius: 50%;
+			color: #000000;
+			font-family: 'Poppins';
+			line-height: 1;
+			font-weight: 500;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@include respond(m-screen) {
+		bottom: 2.5rem;
+		right: 2.5rem;
+
+		>div {
+			padding: 1rem;
+
+			span {
+				right: -.5rem;
+			}
+		}
+	}
+}
+
 
 // Connecting pages style
 @import "main-scss/header.scss";
