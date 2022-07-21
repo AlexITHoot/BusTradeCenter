@@ -2382,11 +2382,104 @@ a:hover {
   font-weight: 500;
 }
 
-.comparison-content {
+.matrix {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 286px minmax(0, 1fr);
-  grid-template-columns: 286px minmax(0, 1fr);
+  -ms-grid-columns: 34.6rem minmax(0, 1fr);
+  grid-template-columns: 34.6rem minmax(0, 1fr);
+}
+.matrix .item {
+  position: relative;
+  padding: 0.625rem;
+  -webkit-box-shadow: inset -1px 1px 0 0 #e9e9e9;
+          box-shadow: inset -1px 1px 0 0 #e9e9e9;
+  word-wrap: break-word;
+  min-height: 3.2rem;
+}
+.matrix .item.group-title {
+  background: none;
+}
+.matrix .matrix-head {
+  margin-bottom: 4rem;
+}
+.matrix .matrix-head .item {
+  width: 100%;
+  height: 31.6rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+}
+.matrix .matrix-head .add {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #E2E2E2;
+  border-radius: 12px;
+}
+.matrix .matrix-head .add span {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2.4rem;
+}
+.matrix .column-right .matrix-head {
+  position: relative;
+}
+.matrix .column-right .matrix-head .swiper-scrollbar {
+  bottom: -3.5rem;
+  height: 0.8rem;
+  background: rgba(226, 226, 226, 0.5);
+}
+.matrix .column-right .matrix-head .swiper-scrollbar .swiper-scrollbar-drag {
+  background: #519DF0;
+}
+.matrix .column-right .comparison-data .swiper-slide:nth-of-type(odd) .item {
+  background: white;
+}
+
+.btc_test {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5.4rem 0;
+}
+.btc_test img {
+  display: inline-block;
+}
+.btc_test a {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #519DF0;
+  margin-top: 1.6rem;
+}
+.btc_test a:hover {
+  color: #F15427;
 }
 
 .product-full .card-wrapper {
