@@ -100,23 +100,21 @@
 							<div class="group range">
 								<label for="">Year</label>
 								<div class="value-wrapper">
-									<input class="slider-value-min" type="text">
-									<!-- <div class="group select">
+									<div class="group select">
 										<select class="slim-select slider-value-min" id="year">
-											<option value="value 1">1997</option>
-											<option value="value 2">1998</option>
-											<option value="value 3">1999</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
 										</select>
-									</div> -->
+									</div>
 									<span>-</span>
-									<!-- <div class="group select">
+									<div class="group select">
 										<select class="slim-select slider-value-max" id="year">
 											<option value="1997">1997</option>
 											<option value="1998">1998</option>
 											<option value="1999">1999</option>
 										</select>
-									</div> -->
-									<input class="slider-value-max" type="text">
+									</div>
 								</div>
 								<div class="range-slider js-range" data-noui-min="1997" data-noui-max="2022" data-noui-step="1">
 								</div>
@@ -284,6 +282,24 @@ comparisonSlider.forEach((slider)=>{
 	});	
 });
 
+	var swiperSmall = new Swiper(".card-img-small", {
+		loop: true,
+		spaceBetween: 10,
+		slidesPerView: 4,
+		slidesPerGroup: 4,
+	});
+
+	var swiperBig = new Swiper(".card-img-big", {
+		loop: true,
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: swiperSmall,
+		},
+	});
 
 </script></body>
 

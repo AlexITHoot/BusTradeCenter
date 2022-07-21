@@ -2768,19 +2768,18 @@ document.addEventListener("DOMContentLoaded", function () {
           decimals: 0
         })
       });
-
-      if (e.closest(".range")) {
-        e.noUiSlider.on("update", function (values) {
+      e.noUiSlider.on("update", function (values) {
+        if (e.closest(".range")) {
           e.closest(".range").querySelector('.slider-value-min').value = values[0];
           e.closest(".range").querySelector('.slider-value-max').value = values[1];
-        });
-        e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
-          e.noUiSlider.set([this.value, null]);
-        });
-        e.closest(".range").querySelector('.slider-value-max').addEventListener('change', function () {
-          e.noUiSlider.set([null, this.value]);
-        });
-      }
+          e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
+            e.noUiSlider.set([this.value, null]);
+          });
+          e.closest(".range").querySelector('.slider-value-max').addEventListener('change', function () {
+            e.noUiSlider.set([null, this.value]);
+          });
+        }
+      });
     });
   }
 }); //Catalog view switcher
