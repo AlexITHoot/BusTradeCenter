@@ -35,7 +35,7 @@
 				slidesPerView: 4,
 				spaceBetween: 40,
 				slidesPerGroup: 4,
-			}
+			} 
 		}
 	});
 
@@ -54,4 +54,23 @@
 			clickable: true,
 		},
 	});
+
+let comparisonSlider = document.querySelectorAll('.comparison-cards');
+
+comparisonSlider.forEach((slider)=>{
+	var swiper = new Swiper(slider, {
+		paginationClickable: true,
+		slidesPerView: 3,
+		spaceBetween: 10,
+		allowTouchMove: false,
+		loop: false,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: false,
+			draggable: true,
+    },
+	});	
+});
+
+
 </script>

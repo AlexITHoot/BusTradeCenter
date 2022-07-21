@@ -1,94 +1,86 @@
 .cards {
    position: relative;
    z-index: 2;
-   padding: 4rem 0;
-   background: linear-gradient(180deg, #F1F1F1 0%, #EBEBEB 42.7%, #FFFFFF 98.3%);
 
-   .container {
-      position: relative;
+   .cards-global {
+      padding: 0 4rem;
+      margin: 0 -4rem;
+   }
 
-      .cards-global {
-         padding: 0 4rem;
-         margin: 0 -4rem;
+   .swiper-button-next {
+      height: fit-content;
+
+      &::after {
+         line-height: 0;
+         content: url(/img/icons/swiper/arr-right.svg);
       }
 
-      .swiper-button-next {
-         height: fit-content;
+      &.swiper-image {
+         width: 2rem;
+         top: 55%;
+         right: 1.5rem;
 
          &::after {
-            line-height: 0;
-            content: url(/img/icons/swiper/arr-right.svg);
-         }
-
-         &.swiper-image {
-            width: 2rem;
-            top: 55%;
-            right: 1.5rem;
-
-            &::after {
-               width: 100%;
-               padding: 0.7rem 0.9rem;
-               background-color: $white;
-               border-radius: 50%;
-               font-size: 0;
-               content: url(/img/icons/swiper/arr-small-right.svg);
-            }
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            background-color: $white;
+            border-radius: 50%;
+            font-size: 0;
+            content: url(/img/icons/swiper/arr-small-right.svg);
          }
       }
+   }
 
-      .swiper-button-prev {
-         height: fit-content;
+   .swiper-button-prev {
+      height: fit-content;
+
+      &::after {
+         line-height: 0;
+         content: url(/img/icons/swiper/arr-left.svg);
+      }
+
+      &.swiper-image {
+         width: 2rem;
+         top: 55%;
+         left: 1.5rem;
 
          &::after {
-            line-height: 0;
-            content: url(/img/icons/swiper/arr-left.svg);
-         }
-
-         &.swiper-image {
-            width: 2rem;
-            top: 55%;
-            left: 1.5rem;
-
-            &::after {
-               width: 100%;
-               padding: 0.7rem 0.9rem;
-               background-color: $white;
-               border-radius: 50%;
-               font-size: 0;
-               content: url(/img/icons/swiper/arr-small-left.svg);
-            }
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            background-color: $white;
+            border-radius: 50%;
+            font-size: 0;
+            content: url(/img/icons/swiper/arr-small-left.svg);
          }
       }
+   }
 
-      .swiper-pagination.swiper-image .swiper-pagination-bullet {
-         background: #FFFFFF;
-         opacity: 0.6;
+   .swiper-pagination.swiper-image .swiper-pagination-bullet {
+      background: #FFFFFF;
+      opacity: 0.6;
 
-         &.swiper-pagination-bullet-active {
-            background: #007AFF;
-         }
+      &.swiper-pagination-bullet-active {
+         background: #007AFF;
       }
    }
 }
 
 @include respond(lg-screen) {
    .cards {
-      .container {
-         .cards-global {
-            padding: 0 3rem;
-            margin: 0px -2rem;
-         }
+
+      .cards-global {
+         padding: 0 3rem;
+         margin: 0px -2rem;
       }
    }
 }
 
 @media screen and (max-width: 991px) {
    .cards {
-      .container {
-         .cards-global {
-            padding: 0px 1rem;
-            margin: 0px 2rem;
-         }
+
+      .cards-global {
+         padding: 0px 1rem;
+         margin: 0px 2rem;
       }
    }
 }

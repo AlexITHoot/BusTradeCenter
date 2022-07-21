@@ -83,8 +83,9 @@
 			</div>
 		</div>
 	</div>
-</section><section class="cards">
-	<div class="container">
+</section>			<div class="main-content">
+				<div class="container">
+<section class="cards">
 		<div class="swiper cards-global">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide product-card">
@@ -451,8 +452,8 @@
 		</div>
 		<div class="swiper-button-next swiper-global"></div>
 		<div class="swiper-button-prev swiper-global"></div>
-	</div>
-</section><section class="autosearch-block">
+</section>				</div>
+<section class="autosearch-block">
    <div class="container">
       <div class="wrapper">
          <p>Sorry, right now we dont have such vehicle for sale. <br>
@@ -475,7 +476,8 @@
          </div>
       </div>
    </div>
-</section>		</div>
+</section>			</div>
+		</div>
 <footer class="footer">
    <div class="container">
       <div class="wrapper">
@@ -532,7 +534,7 @@
 				slidesPerView: 4,
 				spaceBetween: 40,
 				slidesPerGroup: 4,
-			}
+			} 
 		}
 	});
 
@@ -551,5 +553,24 @@
 			clickable: true,
 		},
 	});
+
+let comparisonSlider = document.querySelectorAll('.comparison-cards');
+
+comparisonSlider.forEach((slider)=>{
+	var swiper = new Swiper(slider, {
+		paginationClickable: true,
+		slidesPerView: 3,
+		spaceBetween: 10,
+		allowTouchMove: false,
+		loop: false,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: false,
+			draggable: true,
+    },
+	});	
+});
+
+
 </script></body>
 </html>
