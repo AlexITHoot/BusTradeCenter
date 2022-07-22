@@ -1,7 +1,7 @@
 import noUiSlider from 'nouislider';
 import SlimSelect from 'slim-select';
 import wNumb from 'wnumb';
-
+import Datepicker from 'vanillajs-datepicker/Datepicker';
 
 //Slimselect
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.closest(".range")) {
           e.closest(".range").querySelector('.slider-value-min').value = values[0];
           e.closest(".range").querySelector('.slider-value-max').value = values[1];
-          
+
           e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
             e.noUiSlider.set([this.value, null]);
           });
@@ -71,5 +71,29 @@ catalogViewSwitchList.forEach((el) => {
       el.classList.add('active');
     }
   })
+});
 
-})
+
+//Datepicker
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elem = document.querySelector('.datepicker');
+  if (elem) {
+    const datepicker = new Datepicker(elem, {
+      // ...options
+    });
+  }
+});
+
+const loadFile = function (e) {
+  const output = document.querySelector('.file-output');
+  let image = document.createElement('img');
+  output.appendChild(image);
+
+  image.src = URL.createObjectURL(e.target.files[0]);
+  image.onload = function () {
+    URL.revokeObjectURL(image.src) // free memory
+  }
+};
+
+document.querySelector('.group.file input').addEventListener('change', loadFile);

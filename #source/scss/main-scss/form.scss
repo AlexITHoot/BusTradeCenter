@@ -189,4 +189,136 @@
 			}
 		}
 	}
+
+	&.datapicker {
+		.datepicker {
+			width: 28rem;
+			height: 100%;
+			padding: 0;
+
+			.datepicker-picker {
+				width: 100%;
+				height: 100%;
+				background: none;
+
+				.datepicker-header {
+					background: none;
+
+					.datepicker-controls {
+						align-items: center;
+
+						.button {
+							width: auto;
+							border: none;
+							background-color: initial;
+
+							&.view-switch {
+								flex: 0;
+								order: 1;
+								font-family: 'Montserrat';
+								font-weight: 500;
+								font-size: 1.2rem;
+								line-height: 1.5;
+								font-feature-settings: 'tnum' on, 'lnum' on;
+								color: $gray;
+								padding-left: 0;
+							}
+
+							&.prev-btn {
+								order: 2;
+								margin-left: auto;
+								position: relative;
+
+								&:before {
+									content: url(/img/icons/chevron-left.svg);
+									position: absolute;
+									background: #F6F6F6;
+								}
+							}
+
+							&.next-btn {
+								order: 3;
+								position: relative;
+
+								&:before {
+									content: url(/img/icons/chevron-left.svg);
+									transform: rotateY(180deg);
+									position: absolute;
+									background: #F6F6F6;
+								}
+							}
+						}
+					}
+				}
+
+				.datepicker-main {
+					padding: 0;
+
+					.days {
+						width: 100%;
+
+						.days-of-week {
+							.dow {
+								font-family: 'Montserrat';
+								font-weight: 500;
+								font-size: 1rem;
+								line-height: 1.2;
+								height: auto;
+								color: #000000;
+								padding: 1rem;
+							}
+						}
+
+						.datepicker-grid {
+							width: 100%;
+							border-radius: .4rem;
+
+							.day {
+								font-family: 'Montserrat';
+								font-weight: 400;
+								font-size: 1rem;
+								line-height: 1.2;
+								color: #000000;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								border: 1px solid #ECECEC;
+								background: #F6F6F6;
+								border-radius: initial;
+								width: 4rem;
+								height: 4rem;
+								transition: all .3s ease;
+
+								&:nth-of-type(1) {
+									border-radius: .4rem 0 0 0;
+								}
+
+								&:nth-of-type(7) {
+									border-radius: 0 .4rem 0 0;
+								}
+
+								&:nth-of-type(36) {
+									border-radius: 0 0 0 .4rem;
+								}
+
+								&:nth-of-type(42) {
+									border-radius: 0 0 .4rem 0;
+								}
+
+								&.next {
+									color: $gray;
+									background: #FCFCFC;
+								}
+
+								&.focused {
+									background: $blue;
+									color: $white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

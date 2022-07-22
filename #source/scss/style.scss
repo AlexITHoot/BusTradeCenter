@@ -6,6 +6,8 @@
 @import "main-scss/variables.scss";
 @import "main-scss/null.scss";
 @import 'main-scss/nouislider.scss';
+@import 'main-scss/datepicker.scss';
+
 
 body,
 html {
@@ -22,6 +24,14 @@ body {
 
 .main-wrapper {
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	overflow-y: scroll;
+
+	.content-wrapper {
+		flex-grow: 1;
+	}
 }
 
 h1,
@@ -229,3 +239,5 @@ a {
 @import "autosearch.scss";
 @import "products.scss";
 @import "product-full.scss";
+
+@import "sell-steper.scss";
