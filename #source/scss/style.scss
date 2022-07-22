@@ -34,6 +34,13 @@ body {
 	}
 }
 
+.main-content {
+	position: relative;
+	z-index: 2;
+	background: linear-gradient(180deg, #F1F1F1 0%, #EBEBEB 22.7%, #FFFFFF 32.3%);
+	padding-top: 4rem;
+}
+
 h1,
 h2,
 h3,
@@ -241,3 +248,5 @@ a {
 @import "product-full.scss";
 
 @import "sell-steper.scss";
+@import "comparison.scss";
+@import "product-full.scss";

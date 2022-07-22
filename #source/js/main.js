@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //Catalog view switcher
 
 let catalogViewSwitchList = document.querySelectorAll('.catalog-view__switch a');
+let productList = document.querySelectorAll('.product_list');
 
 catalogViewSwitchList.forEach((el) => {
 
@@ -70,6 +71,14 @@ catalogViewSwitchList.forEach((el) => {
     if (!el.classList.contains('active')) {
       el.classList.add('active');
     }
+    productList.forEach((item) => {
+      if (item.classList.contains(el.getAttribute('data-view'))) {
+        productList.forEach((i) => {
+          i.classList.remove('active');
+        })
+        item.classList.add('active');
+      }
+    })
   })
 });
 

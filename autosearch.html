@@ -245,7 +245,7 @@
 				slidesPerView: 4,
 				spaceBetween: 40,
 				slidesPerGroup: 4,
-			}
+			} 
 		}
 	});
 
@@ -265,6 +265,33 @@
 		},
 	});
 
+
+	var comparisonCards = new Swiper('.comparison-cards', {
+		paginationClickable: true,
+		slidesPerView: 3,
+		spaceBetween: 0,
+		allowTouchMove: true,
+		loop: false,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: false,
+			draggable: true,
+    },
+	});
+
+	var comparisonData = new Swiper('.comparison-data', {
+		paginationClickable: true,
+		slidesPerView: 3,
+		spaceBetween: 0,
+		allowTouchMove: true,
+		loop: false,
+	});	
+
+	comparisonCards.controller.control = this.comparisonData;
+	comparisonData.controller.control = this.comparisonCards;
+	
+
+	
 	var swiperSmall = new Swiper(".card-img-small", {
 		loop: true,
 		spaceBetween: 10,
