@@ -6,5 +6,8 @@
     "nouislider": "^15.6.0",
     "slim-select": "^1.27.1",
     "wnumb": "^1.2.0"
+  },
+  "devDependencies": {
+    "vanillajs-datepicker": "^1.2.0"
   }
 }

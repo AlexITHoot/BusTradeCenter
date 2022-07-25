@@ -1,7 +1,7 @@
 import noUiSlider from 'nouislider';
 import SlimSelect from 'slim-select';
 import wNumb from 'wnumb';
-
+import Datepicker from 'vanillajs-datepicker/Datepicker';
 
 //Slimselect
 
@@ -80,8 +80,7 @@ catalogViewSwitchList.forEach((el) => {
       }
     })
   })
-
-})
+});
 
 //Matrix
 
@@ -112,3 +111,27 @@ matrixBodyItem.forEach((el) => {
     element.style.cssText = `height:${itemHeight[index]}px`;
   })
 })
+
+//Datepicker
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elem = document.querySelector('.datepicker');
+  if (elem) {
+    const datepicker = new Datepicker(elem, {
+      // ...options
+    });
+  }
+});
+
+const loadFile = function (e) {
+  const output = document.querySelector('.file-output');
+  let image = document.createElement('img');
+  output.appendChild(image);
+
+  image.src = URL.createObjectURL(e.target.files[0]);
+  image.onload = function () {
+    URL.revokeObjectURL(image.src) // free memory
+  }
+};
+
+document.querySelector('.group.file input').addEventListener('change', loadFile);
