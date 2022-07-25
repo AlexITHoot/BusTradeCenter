@@ -2730,6 +2730,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slim_select__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var wnumb__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var wnumb__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wnumb__WEBPACK_IMPORTED_MODULE_2__);
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
  //Slimselect
@@ -2805,6 +2817,25 @@ catalogViewSwitchList.forEach(function (el) {
         item.classList.add('active');
       }
     });
+  });
+}); //Matrix
+
+var matrixBodyItem = document.querySelectorAll('.matrix-body');
+var itemHeight = [];
+matrixBodyItem.forEach(function (el) {
+  var elChildren = _toConsumableArray(el.children);
+
+  elChildren.forEach(function (element, index) {
+    if (!itemHeight[index] || itemHeight[index] < element.offsetHeight) {
+      itemHeight[index] = element.offsetHeight;
+    }
+  });
+});
+matrixBodyItem.forEach(function (el) {
+  var elChildren = _toConsumableArray(el.children);
+
+  elChildren.forEach(function (element, index) {
+    element.style.cssText = "height:".concat(itemHeight[index], "px");
   });
 });
 }();

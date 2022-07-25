@@ -2425,6 +2425,55 @@ a:hover {
   font-weight: 500;
 }
 
+.comparison {
+  margin-top: 4.8rem;
+}
+.comparison h1 {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+.comparison .comparison-cards .item.product-card {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.comparison .comparison-cards .item.product-card .card-images {
+  width: 100%;
+  height: 20rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.comparison .comparison-cards .item.product-card .card-images .swiper-slide {
+  border-radius: 1.2rem 1.2rem 0 0;
+  overflow: hidden;
+}
+.comparison .comparison-cards .item.product-card .card-images .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comparison .comparison-cards .item.product-card .bottom-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.comparison .comparison-cards .item.product-card .bottom-content .block-wrapper {
+  margin: 0;
+}
+.comparison .comparison-cards .item.product-card .bottom-content .block-wrapper .img-wrapper {
+  background: #519DF0;
+}
+.comparison .comparison-cards .item.product-card .bottom-content .block-wrapper .img-wrapper svg use {
+  fill: white;
+}
+
 .matrix {
   display: -ms-grid;
   display: grid;
@@ -2433,14 +2482,27 @@ a:hover {
 }
 .matrix .item {
   position: relative;
-  padding: 0.625rem;
-  -webkit-box-shadow: inset -1px 1px 0 0 #e9e9e9;
-          box-shadow: inset -1px 1px 0 0 #e9e9e9;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-box-shadow: inset 0 1px 0 0 #e9e9e9;
+          box-shadow: inset 0 1px 0 0 #e9e9e9;
   word-wrap: break-word;
-  min-height: 3.2rem;
+  min-height: 3.6rem;
 }
 .matrix .item.group-title {
-  background: none;
+  background: none !important;
+  padding: 6.4rem 1rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.matrix .item:first-child {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.matrix .item:last-child {
+  -webkit-box-shadow: inset 0 1px 0 0 #e9e9e9, inset 0 -1px 0 0 #e9e9e9;
+          box-shadow: inset 0 1px 0 0 #e9e9e9, inset 0 -1px 0 0 #e9e9e9;
 }
 .matrix .matrix-head {
   margin-bottom: 4rem;
@@ -2478,6 +2540,9 @@ a:hover {
   font-weight: 400;
   line-height: 1.5;
   margin-top: 2.4rem;
+}
+.matrix .column-left .matrix-head {
+  padding-right: 2rem;
 }
 .matrix .column-right .matrix-head {
   position: relative;

@@ -82,3 +82,33 @@ catalogViewSwitchList.forEach((el) => {
   })
 
 })
+
+//Matrix
+
+let matrixBodyItem = document.querySelectorAll('.matrix-body');
+
+let itemHeight = []
+
+matrixBodyItem.forEach((el) => {
+
+  let elChildren = [...el.children];
+
+  elChildren.forEach((element, index) => {
+
+    if (!itemHeight[index] || itemHeight[index] < element.offsetHeight) {
+      itemHeight[index] = element.offsetHeight
+    }
+
+  })
+
+})
+
+matrixBodyItem.forEach((el) => {
+
+  let elChildren = [...el.children];
+
+  elChildren.forEach((element, index) => {
+
+    element.style.cssText = `height:${itemHeight[index]}px`;
+  })
+})
