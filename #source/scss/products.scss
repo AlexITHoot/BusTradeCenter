@@ -1,204 +1,349 @@
 .products-content {
-  display: grid;
-  grid-template-columns: 286px 1fr;
-  column-gap: 5.7rem;
-  margin-bottom: 6.4rem;
-}
+	display: grid;
+	grid-template-columns: 286px 1fr;
+	column-gap: 5.7rem;
+	margin-bottom: 6.4rem;
 
-.filter-sidebar {
-  .group {
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
+	.overlay {
+		visibility: hidden;
+		transition: all .3s ease;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba($gray, .5);
+		z-index: 2;
+	}
 
-    label {
-      margin-bottom: 1.2rem;
-    }
+	&.active {
+		position: relative;
 
-    .group {
-      &.check {
-        &:not(:last-child) {
-          margin-bottom: 1.2rem;
-        }
+		.overlay {
+			content: '';
+			visibility: visible;
 
-        label {
-          margin: 0;
-        }
-      }
-    }
-
-    .range-slider {
-      margin-bottom: 1.6rem;
-    }
-
-    .currency-block {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-
-      label {
-        margin-bottom: 0;
-      }
-
-      .currency {
-        display: flex;
-        align-items: center;
-        margin: 0;
-
-        li {
-          &:not(:last-child) {
-            margin-right: 1.2rem;
-          }
-
-          &.active {
-            a {
-              color: $orange;
-            }
-          }
-
-          a {
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: rgba($dark, 0.4);
-
-            &:hover {
-              color: $orange;
-            }
-          }
-        }
-      }
-    }
-
-  }
-
-  .double-select {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.6rem;
-  }
-
-  .scale {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    span {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: rgba($dark, 0.4);
-    }
-  }
-}
-
-.filter-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-bottom: 3.2rem;
-
-  h3 {
-    font-size: 2.4rem;
-    font-weight: 500;
-  }
-
-  a {
-    font-size: 1.6rem;
-    color: rgba($dark, 0.5);
-
-    &:hover {
-      color: $orange;
-    }
-  }
+		}
+	}
 }
 
 .catalog-heading {
-  text-align: center;
+	text-align: center;
 
-  h1 {
-    font-size: 4.8rem;
-    font-weight: 400;
-    margin-bottom: 3.6rem;
-  }
+	h1 {
+		font-size: 4.8rem;
+		font-weight: 400;
+		margin-bottom: 3.6rem;
+	}
+}
+
+.filter-heading {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 3.2rem;
+
+	h3 {
+		font-size: 2.4rem;
+		font-weight: 500;
+	}
+
+	a {
+		font-size: 1.6rem;
+		color: rgba($dark, 0.5);
+
+		&:hover {
+			color: $orange;
+		}
+	}
 }
 
 .catalog-list-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-bottom: 3.2rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 3.2rem;
 
-  span {
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
+	span {
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+}
+
+.filter-sidebar {
+	&.active {
+		visibility: visible;
+		top: 0;
+		left: 0;
+
+	}
+
+	.group {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		label {
+			margin-bottom: 1.2rem;
+		}
+
+		.group {
+			&.check {
+				&:not(:last-child) {
+					margin-bottom: 1.2rem;
+				}
+
+				label {
+					margin: 0;
+				}
+			}
+		}
+
+		.range-slider {
+			margin-bottom: 1.6rem;
+		}
+
+		.currency-block {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+
+			label {
+				margin-bottom: 0;
+			}
+
+			.currency {
+				display: flex;
+				align-items: center;
+				margin: 0;
+
+				li {
+					&:not(:last-child) {
+						margin-right: 1.2rem;
+					}
+
+					&.active {
+						a {
+							color: $orange;
+						}
+					}
+
+					a {
+						font-size: 1.4rem;
+						font-weight: 500;
+						color: rgba($dark, 0.4);
+
+						&:hover {
+							color: $orange;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	.double-select {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 1.6rem;
+	}
+
+	.scale {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		span {
+			font-size: 1.2rem;
+			font-weight: 400;
+			color: rgba($dark, 0.4);
+		}
+	}
 }
 
 .catalog-view__switch {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.2rem;
-    height: 3.2rem;
-    background: rgba($gray, 0.1);
-    border-radius: 0.4rem;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3.2rem;
+		height: 3.2rem;
+		background: rgba($gray, 0.1);
+		border-radius: 0.4rem;
 
-    &:not(:last-child) {
-      margin-right: 1.2rem;
-    }
+		&:not(:last-child) {
+			margin-right: 1.2rem;
+		}
 
-    svg {
-      use {
-        fill: rgba($gray, 0.3)
-      }
-    }
+		svg {
+			use {
+				fill: rgba($gray, 0.3)
+			}
+		}
 
-    &.active {
-      background: rgba($blue, 0.1);
+		&.active {
+			background: rgba($blue, 0.1);
 
-      svg {
-        use {
-          fill: $blue;
-        }
-      }
-    }
-  }
+			svg {
+				use {
+					fill: $blue;
+				}
+			}
+		}
+	}
 }
 
 .product_list {
-  display: none !important;
+	display: none !important;
 
-  &.active {
-    display: grid !important;
-  }
+	&.active {
+		display: grid !important;
+	}
 
-  &.catalog-view-tale {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 4rem;
-    padding: 0;
-  }
+	&.catalog-view-tale {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 4rem;
+		padding: 0;
+	}
 
-  &.catalog-view-list {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 2.4rem;
-    padding: 0;
-  }
+	&.catalog-view-list {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		row-gap: 2.4rem;
+		padding: 0;
+		overflow-x: scroll;
+		padding-bottom: 2rem;
+
+		.product-card {
+			min-width: 100rem;
+		}
+	}
 }
 
 .popular {
-  margin-bottom: 6.4rem;
+	margin-bottom: 6.4rem;
 
-  .title {
-    margin-bottom: 4.8rem;
+	.title {
+		margin-bottom: 4.8rem;
 
-    h2 {
-      font-size: 3.2rem;
-      font-weight: 500;
-    }
-  }
+		h2 {
+			font-size: 3.2rem;
+			font-weight: 500;
+		}
+	}
+}
+
+@include respond(lg-screen) {
+	.products-content {
+		column-gap: 2.5rem;
+		margin-bottom: 5rem;
+	}
+
+	.catalog-heading {
+		h1 {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	.filter-heading {
+		margin-bottom: 2.5rem;
+	}
+
+	.catalog-list-heading {
+		margin-bottom: 2.5rem;
+	}
+
+	.product_list {
+		&.catalog-view-tale {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 2rem;
+		}
+
+		&.catalog-view-list {
+			row-gap: 2rem;
+
+			&::-webkit-scrollbar {
+				height: .8rem;
+			}
+
+			&::-webkit-scrollbar-track {
+				background: #E2E2E2;
+				opacity: 0.5;
+				border-radius: .1rem;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: #519DF0;
+				border-radius: .8rem;
+			}
+
+			.product-card {
+				.bottom-content {
+					padding: 0 0 0 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+@include respond(s-screen) {
+	.product_list {
+		&.catalog-view-tale {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.products-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.filter-sidebar {
+		visibility: hidden;
+		transition: visibility 0.3s ease, left .3s ease;
+		position: fixed;
+		top: 0;
+		left: -30rem;
+		background: $white;
+		z-index: 222;
+		overflow-y: scroll;
+		max-height: 100vh;
+		padding: 2rem;
+
+		&::-webkit-scrollbar {
+			width: .8rem;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #E2E2E2;
+			opacity: 0.5;
+			border-radius: .1rem;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: #519DF0;
+			border-radius: .8rem;
+		}
+	}
+
+	.product_list {
+		&.catalog-view-tale {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.product_list {
+		&.catalog-view-tale {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+	}
 }

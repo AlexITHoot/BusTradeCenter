@@ -26,6 +26,10 @@
 					width: 100%;
 				}
 			}
+
+			.navbar-toggler {
+				margin-left: .8rem;
+			}
 		}
 
 		.language-selector {
@@ -46,6 +50,7 @@
 			display: flex;
 			align-items: center;
 			margin-left: auto;
+			background: $white;
 
 			.nav-link {
 				color: $dark;
@@ -65,11 +70,28 @@
 	.header {
 		height: 7rem;
 
+		.container-header {
+			padding: 0;
+		}
+
 		.wrapper {
+			padding: 1.4rem 0;
+
+			.right-block {
+				max-width: initial;
+				padding: 0 1.5rem;
+			}
+
+			.navbar-collapse {
+				z-index: 100;
+			}
+
 			.nav-menu {
+				padding: 2rem 0;
+
 				.nav-link {
 					margin: 0 .5rem;
-					padding: 0 .5rem;
+					padding: .5rem;
 				}
 			}
 		}

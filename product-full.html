@@ -19,7 +19,7 @@
    <div class="main-wrapper">
 <header class="header">
 	<div class="container-header">
-		<div class="wrapper">
+		<navbar class="navbar navbar-expand-lg navbar-light wrapper">
 			<div class="right-block">
 				<div class="logo">
 					<img src="/img/icons/logo.svg" alt="logo">
@@ -35,15 +35,21 @@
 						<a href="#"><img src="/img/icons/russia.svg" alt="russia-language"></a>
 					</div>
 				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 			</div>
-			<nav class="nav-menu">
-				<a href="#" class="nav-link">Home</a>
-				<a href="#" class="nav-link">About</a>
-				<a href="#" class="nav-link">Autosearch</a>
-				<a href="#" class="nav-link">Sell</a>
-				<a href="#" class="nav-link">Contact</a>
-			</nav>
-		</div>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<div class="nav-menu navbar-nav">
+					<a href="#" class="nav-link">Home</a>
+					<a href="#" class="nav-link">About</a>
+					<a href="#" class="nav-link">Autosearch</a>
+					<a href="#" class="nav-link">Sell</a>
+					<a href="#" class="nav-link">Contact</a>
+				</div>
+			</div>
+		</navbar>
 	</div>
 </header>      <div class="content-wrapper">
          <section class="product-full">
@@ -552,7 +558,7 @@
 				slidesPerView: 4,
 				spaceBetween: 40,
 				slidesPerGroup: 4,
-			}
+			} 
 		}
 	});
 
@@ -571,7 +577,7 @@
 			clickable: true,
 		},
 	});
-
+	
 	var swiperSmall = new Swiper(".card-img-small", {
 		loop: true,
 		spaceBetween: 10,
