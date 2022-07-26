@@ -123,6 +123,7 @@
 @include respond(m-screen) {
 	.main-screen {
 		max-height: initial;
+		height: initial;
 
 		.wrapper {
 			flex-wrap: wrap;

@@ -5803,137 +5803,169 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var wnumb__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony import */ var wnumb__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wnumb__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var vanillajs_datepicker_Datepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
 
- //Slimselect
 
-var slimSelect = document.querySelectorAll('.slim-select');
-slimSelect.forEach(function (el) {
-  new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
-    select: el,
-    showSearch: false
-  });
-}); //NoUISlider
+//Slimselect
 
-document.addEventListener("DOMContentLoaded", function () {
-  var jsRange = document.querySelectorAll('.js-range');
+let slimSelect = document.querySelectorAll('.slim-select');
 
-  if (jsRange.length > 0) {
-    jsRange.forEach(function (e) {
-      nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(e, {
-        start: [e.getAttribute('data-noui-min') || 0, e.getAttribute('data-noui-max') || 0],
-        step: Number(e.getAttribute('data-noui-step') || 10),
-        margin: 0,
-        connect: true,
-        direction: "ltr",
-        orientation: "horizontal",
-        behaviour: "tap-drag",
-        tooltips: [wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
-          decimals: 0
-        }), wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
-          decimals: 0
-        })],
-        range: {
-          min: Number(e.getAttribute('data-noui-min') || 0),
-          max: Number(e.getAttribute('data-noui-max') || 0)
-        },
-        format: wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
-          decimals: 0
-        })
-      });
-      e.noUiSlider.on("update", function (values) {
-        if (e.closest(".range")) {
-          e.closest(".range").querySelector('.slider-value-min').value = values[0];
-          e.closest(".range").querySelector('.slider-value-max').value = values[1];
-          e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
-            e.noUiSlider.set([this.value, null]);
-          });
-          e.closest(".range").querySelector('.slider-value-max').addEventListener('change', function () {
-            e.noUiSlider.set([null, this.value]);
-          });
-        }
-      });
-    });
-  }
-}); //Catalog view switcher
-
-var catalogViewSwitchList = document.querySelectorAll('.catalog-view__switch a');
-var productList = document.querySelectorAll('.product_list');
-catalogViewSwitchList.forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    e.preventDefault();
-    catalogViewSwitchList.forEach(function (el) {
-      el.classList.remove('active');
-    });
-
-    if (!el.classList.contains('active')) {
-      el.classList.add('active');
-    }
-
-    productList.forEach(function (item) {
-      if (item.classList.contains(el.getAttribute('data-view'))) {
-        productList.forEach(function (i) {
-          i.classList.remove('active');
-        });
-        item.classList.add('active');
-      }
-    });
-  });
-}); //Matrix
-
-var matrixBodyItem = document.querySelectorAll('.matrix-body');
-var itemHeight = [];
-matrixBodyItem.forEach(function (el) {
-  var elChildren = _toConsumableArray(el.children);
-
-  elChildren.forEach(function (element, index) {
-    if (!itemHeight[index] || itemHeight[index] < element.offsetHeight) {
-      itemHeight[index] = element.offsetHeight;
-    }
-  });
-});
-matrixBodyItem.forEach(function (el) {
-  var elChildren = _toConsumableArray(el.children);
-
-  elChildren.forEach(function (element, index) {
-    element.style.cssText = "height:".concat(itemHeight[index], "px");
-  });
-}); //Datepicker
-
-document.addEventListener("DOMContentLoaded", function () {
-  var elem = document.querySelector('.datepicker');
-
-  if (elem) {
-    var datepicker = new vanillajs_datepicker_Datepicker__WEBPACK_IMPORTED_MODULE_3__["default"](elem, {// ...options
-    });
-  }
+slimSelect.forEach((el) => {
+	new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
+		select: el,
+		showSearch: false,
+	})
 });
 
-var loadFile = function loadFile(e) {
-  var output = document.querySelector('.file-output');
-  var image = document.createElement('img');
-  output.appendChild(image);
-  image.src = URL.createObjectURL(e.target.files[0]);
+//NoUISlider
 
-  image.onload = function () {
-    URL.revokeObjectURL(image.src); // free memory
-  };
+document.addEventListener("DOMContentLoaded", () => {
+	let jsRange = document.querySelectorAll('.js-range');
+
+	if (jsRange.length > 0) {
+		jsRange.forEach((e) => {
+			nouislider__WEBPACK_IMPORTED_MODULE_0___default().create(e, {
+				start: [e.getAttribute('data-noui-min') || 0, e.getAttribute('data-noui-max') || 0],
+				step: Number(e.getAttribute('data-noui-step') || 10),
+				margin: 0,
+				connect: true,
+				direction: "ltr",
+				orientation: "horizontal",
+				behaviour: "tap-drag",
+				tooltips: [wnumb__WEBPACK_IMPORTED_MODULE_2___default()({ decimals: 0 }), wnumb__WEBPACK_IMPORTED_MODULE_2___default()({ decimals: 0 })],
+				range: {
+					min: Number(e.getAttribute('data-noui-min') || 0),
+					max: Number(e.getAttribute('data-noui-max') || 0)
+				},
+				format: wnumb__WEBPACK_IMPORTED_MODULE_2___default()({
+					decimals: 0
+				})
+			});
+			e.noUiSlider.on("update", function (values) {
+				if (e.closest(".range")) {
+					e.closest(".range").querySelector('.slider-value-min').value = values[0];
+					e.closest(".range").querySelector('.slider-value-max').value = values[1];
+
+					e.closest(".range").querySelector('.slider-value-min').addEventListener('change', function () {
+						e.noUiSlider.set([this.value, null]);
+					});
+					e.closest(".range").querySelector('.slider-value-max').addEventListener('change', function () {
+						e.noUiSlider.set([null, this.value]);
+					});
+				}
+			});
+		})
+	}
+});
+
+//Catalog view switcher
+
+let catalogViewSwitchList = document.querySelectorAll('.catalog-view__switch a');
+let productList = document.querySelectorAll('.product_list');
+
+catalogViewSwitchList.forEach((el) => {
+
+	el.addEventListener('click', function (e) {
+		e.preventDefault();
+		catalogViewSwitchList.forEach((el) => {
+			el.classList.remove('active');
+		})
+		if (!el.classList.contains('active')) {
+			el.classList.add('active');
+		}
+		productList.forEach((item) => {
+			if (item.classList.contains(el.getAttribute('data-view'))) {
+				productList.forEach((i) => {
+					i.classList.remove('active');
+				})
+				item.classList.add('active');
+			}
+		})
+	})
+});
+
+
+
+//Datepicker
+
+document.addEventListener("DOMContentLoaded", () => {
+	const elem = document.querySelector('.datepicker');
+	if (elem) {
+		const datepicker = new vanillajs_datepicker_Datepicker__WEBPACK_IMPORTED_MODULE_3__["default"](elem, {
+			// ...options
+		});
+	}
+});
+
+//LoadImgPrew
+
+const loadFile = function (e) {
+	const output = document.querySelector('.file-output');
+	let image = document.createElement('img');
+	output.appendChild(image);
+
+	image.src = URL.createObjectURL(e.target.files[0]);
+	image.onload = function () {
+		URL.revokeObjectURL(image.src) // free memory
+	}
 };
+window.loadFile = loadFile;
 
-document.querySelector('.group.file input').addEventListener('change', loadFile);
+
+
+['DOMContentLoaded', 'resize'].forEach(type => {
+	//Matrix
+	if (type === 'DOMContentLoaded') {
+		document.addEventListener(type, () => {
+			let matrixBodyItem = document.querySelectorAll('.matrix-body');
+			let itemHeight = [];
+
+			matrixBodyItem.forEach((el) => {
+				let elChildren = [...el.children];
+
+				elChildren.forEach((element, index) => {
+					if (!itemHeight[index] || itemHeight[index] < element.offsetHeight) {
+						itemHeight[index] = element.offsetHeight
+					}
+				})
+			});
+
+			matrixBodyItem.forEach((el) => {
+				let elChildren = [...el.children];
+
+				elChildren.forEach((element, index) => {
+					element.style.cssText = `height:${itemHeight[index]}px`;
+				})
+			});
+		});
+	}
+	else if (type === 'resize') {
+		window.addEventListener(type, () => {
+			let matrixBodyItem = document.querySelectorAll('.matrix-body');
+			let itemHeight = [];
+
+			matrixBodyItem.forEach((el) => {
+				let elChildren = [...el.children];
+
+				elChildren.forEach((element, index) => {
+					if (!itemHeight[index] || itemHeight[index] < element.offsetHeight) {
+						itemHeight[index] = element.offsetHeight;
+					}
+				});
+			});
+
+			matrixBodyItem.forEach((el) => {
+				let elChildren = [...el.children];
+
+				elChildren.forEach((element, index) => {
+					element.style.cssText = `height:${itemHeight[index]}px`;
+				})
+			});
+		});
+	}
+});
 }();
 /******/ })()
 ;
