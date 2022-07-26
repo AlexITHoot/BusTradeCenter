@@ -56,6 +56,25 @@
 	display: grid;
 	grid-template-columns: 34.6rem minmax(0, 1fr);
 
+	>div {
+
+		&:nth-of-type(1),
+		&:nth-of-type(2) {
+			margin: 3rem 0;
+			font-size: 1.6rem;
+			line-height: 1.5;
+
+			a {
+				color: $dark;
+				opacity: 0.5;
+			}
+
+			span {
+				color: $dark;
+			}
+		}
+	}
+
 	.item {
 		position: relative;
 		padding: 1rem;
@@ -192,6 +211,44 @@
 }
 
 @include respond(m-screen) {
+	.comparison {
+		margin-top: 3rem;
+
+		h1 {
+			font-size: 3.6rem;
+		}
+
+		.comparison-cards {
+			.item {
+				&.product-card {
+					.bottom-content {
+						padding: 1rem;
+
+						h4 {
+							font-size: 1.4rem;
+						}
+
+						.block-wrapper:last-of-type {
+							h5 {
+								font-size: 1.6rem;
+								margin-top: .5rem;
+							}
+
+							.btn {
+								margin: 0 .5rem;
+								margin-top: .5rem;
+							}
+
+							a {
+								margin-top: .5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.matrix {
 		grid-template-columns: 25rem minmax(0, 1fr);
 
@@ -206,6 +263,18 @@
 @include respond(s-screen) {
 	.matrix {
 		grid-template-columns: 20rem minmax(0, 1fr);
+
+		>div {
+
+			&:nth-of-type(1),
+			&:nth-of-type(2) {
+				margin: 1rem 0;
+			}
+
+			&:nth-of-type(2) {
+				text-align: end;
+			}
+		}
 
 		.item {
 			font-size: 1.4rem;
@@ -230,9 +299,26 @@
 
 				.item {
 					width: 100%;
-					max-width: 25rem;
-					height: 15rem;
-					margin: 0 auto;
+					height: 7rem;
+
+					a {
+						flex-direction: row;
+						padding: .5rem;
+
+						img {
+							height: 100%;
+							max-height: 4rem;
+						}
+
+						span {
+							margin-left: 1rem;
+							margin-top: 0;
+
+							br {
+								display: none;
+							}
+						}
+					}
 				}
 			}
 		}

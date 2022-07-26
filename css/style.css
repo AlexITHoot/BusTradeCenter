@@ -1039,6 +1039,9 @@ a:hover {
 .header .wrapper .right-block .logo img {
 	width: 100%;
 }
+.header .wrapper .right-block .navbar-toggler {
+	margin-left: 0.8rem;
+}
 .header .wrapper .language-selector {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1062,6 +1065,7 @@ a:hover {
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin-left: auto;
+	background: white;
 }
 .header .wrapper .nav-menu .nav-link {
 	color: #252525;
@@ -1077,9 +1081,25 @@ a:hover {
 	.header {
 		height: 7rem;
 	}
+	.header .container-header {
+		padding: 0;
+	}
+	.header .wrapper {
+		padding: 1.4rem 0;
+	}
+	.header .wrapper .right-block {
+		max-width: initial;
+		padding: 0 1.5rem;
+	}
+	.header .wrapper .navbar-collapse {
+		z-index: 100;
+	}
+	.header .wrapper .nav-menu {
+		padding: 2rem 0;
+	}
 	.header .wrapper .nav-menu .nav-link {
 		margin: 0 0.5rem;
-		padding: 0 0.5rem;
+		padding: 0.5rem;
 	}
 }
 .footer {
@@ -4335,6 +4355,18 @@ a:hover {
 	-ms-grid-columns: 34.6rem minmax(0, 1fr);
 	grid-template-columns: 34.6rem minmax(0, 1fr);
 }
+.matrix > div:nth-of-type(1), .matrix > div:nth-of-type(2) {
+	margin: 3rem 0;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+.matrix > div:nth-of-type(1) a, .matrix > div:nth-of-type(2) a {
+	color: #252525;
+	opacity: 0.5;
+}
+.matrix > div:nth-of-type(1) span, .matrix > div:nth-of-type(2) span {
+	color: #252525;
+}
 .matrix .item {
 	position: relative;
 	padding: 1rem;
@@ -4457,6 +4489,30 @@ a:hover {
 }
 
 @media only screen and (max-width: 991.98px) {
+	.comparison {
+		margin-top: 3rem;
+	}
+	.comparison h1 {
+		font-size: 3.6rem;
+	}
+	.comparison .comparison-cards .item.product-card .bottom-content {
+		padding: 1rem;
+	}
+	.comparison .comparison-cards .item.product-card .bottom-content h4 {
+		font-size: 1.4rem;
+	}
+	.comparison .comparison-cards .item.product-card .bottom-content .block-wrapper:last-of-type h5 {
+		font-size: 1.6rem;
+		margin-top: 0.5rem;
+	}
+	.comparison .comparison-cards .item.product-card .bottom-content .block-wrapper:last-of-type .btn {
+		margin: 0 0.5rem;
+		margin-top: 0.5rem;
+	}
+	.comparison .comparison-cards .item.product-card .bottom-content .block-wrapper:last-of-type a {
+		margin-top: 0.5rem;
+	}
+
 	.matrix {
 		-ms-grid-columns: 25rem minmax(0, 1fr);
 		grid-template-columns: 25rem minmax(0, 1fr);
@@ -4469,6 +4525,12 @@ a:hover {
 	.matrix {
 		-ms-grid-columns: 20rem minmax(0, 1fr);
 		grid-template-columns: 20rem minmax(0, 1fr);
+	}
+	.matrix > div:nth-of-type(1), .matrix > div:nth-of-type(2) {
+		margin: 1rem 0;
+	}
+	.matrix > div:nth-of-type(2) {
+		text-align: end;
 	}
 	.matrix .item {
 		font-size: 1.4rem;
@@ -4491,9 +4553,25 @@ a:hover {
 	}
 	.matrix .column-left .matrix-head .item {
 		width: 100%;
-		max-width: 25rem;
-		height: 15rem;
-		margin: 0 auto;
+		height: 7rem;
+	}
+	.matrix .column-left .matrix-head .item a {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		padding: 0.5rem;
+	}
+	.matrix .column-left .matrix-head .item a img {
+		height: 100%;
+		max-height: 4rem;
+	}
+	.matrix .column-left .matrix-head .item a span {
+		margin-left: 1rem;
+		margin-top: 0;
+	}
+	.matrix .column-left .matrix-head .item a span br {
+		display: none;
 	}
 	.matrix .matrix-head {
 		margin-bottom: 4rem;
