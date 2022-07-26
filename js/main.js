@@ -5886,8 +5886,6 @@ catalogViewSwitchList.forEach((el) => {
 	})
 });
 
-
-
 //Datepicker
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -5913,10 +5911,9 @@ const loadFile = function (e) {
 };
 window.loadFile = loadFile;
 
-
+//Matrix
 
 ['DOMContentLoaded', 'resize'].forEach(type => {
-	//Matrix
 	if (type === 'DOMContentLoaded') {
 		document.addEventListener(type, () => {
 			let matrixBodyItem = document.querySelectorAll('.matrix-body');
@@ -5966,6 +5963,7 @@ window.loadFile = loadFile;
 		});
 	}
 });
+
 }();
 /******/ })()
 ;

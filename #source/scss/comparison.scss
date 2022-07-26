@@ -217,36 +217,6 @@
 		h1 {
 			font-size: 3.6rem;
 		}
-
-		.comparison-cards {
-			.item {
-				&.product-card {
-					.bottom-content {
-						padding: 1rem;
-
-						h4 {
-							font-size: 1.4rem;
-						}
-
-						.block-wrapper:last-of-type {
-							h5 {
-								font-size: 1.6rem;
-								margin-top: .5rem;
-							}
-
-							.btn {
-								margin: 0 .5rem;
-								margin-top: .5rem;
-							}
-
-							a {
-								margin-top: .5rem;
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 
 	.matrix {

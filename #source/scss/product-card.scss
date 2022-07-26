@@ -51,7 +51,7 @@
 			&:first-of-type {
 				display: grid;
 				margin: 0 -1rem;
-				margin-bottom: 2rem;
+				margin-bottom: 1rem;
 				grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
 
 				.wrapper-item {
@@ -80,6 +80,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				flex-wrap: wrap;
 
 				h5 {
 					font-weight: 600;
@@ -88,10 +89,12 @@
 					transition: color .3s ease;
 					flex-wrap: nowrap;
 					white-space: nowrap;
+					margin-top: 1rem;
 				}
 
 				.btn {
-					margin: 0 1rem;
+					margin: 0 .5rem;
+					margin-top: 1rem;
 				}
 
 				.img-wrapper {
@@ -100,6 +103,7 @@
 					border-radius: .6rem;
 					padding: .8rem;
 					position: relative;
+					margin-top: 1rem;
 
 					&:hover {
 						.compare {
@@ -285,6 +289,42 @@
 
 					.btn {
 						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond(m-screen) {
+	.product-card {
+		.bottom-content {
+			padding: 1rem;
+
+			h4 {
+				font-size: 1.4rem;
+			}
+
+			.block-wrapper {
+				&:first-of-type {
+					.wrapper-item {
+						margin: 0 1rem;
+						padding: .7rem 0;
+					}
+				}
+
+				&:last-of-type {
+					h5 {
+						font-size: 1.6rem;
+						margin-top: .5rem;
+					}
+
+					.btn {
+						margin-top: .5rem;
+					}
+
+					a {
+						margin-top: .5rem;
 					}
 				}
 			}

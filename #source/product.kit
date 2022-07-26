@@ -8,1396 +8,1425 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.css" rel="stylesheet"></link>
-	<link rel="stylesheet" href="../node_modules/nouislider/dist/nouislider.css"></link>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.1/slimselect.min.css" rel="stylesheet">
+	</link>
+	<link rel="stylesheet" href="../node_modules/nouislider/dist/nouislider.css">
+	</link>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<div class="main-wrapper">
 		<!-- @import "main-kit/header.kit" -->
-
-    
 		<div class="content-wrapper">
-      <div class="container">
-					<div class="breadcrumbs">
-						<a href="">Home</a>
-						<a href="" class="cur-page">Comparison</a>
-					</div> 
-          <div class="products-content">
-            <div></div>
-            <div class="catalog-heading"><h1>Products</h1></div>
-            <div class="filter-heading">
-              <h3>Filters</h3>
-              <a href="" class="clear">Clear</a>                   
-            </div>
-            <div class="catalog-list-heading">
-              <span>67 Products</span>
-              <div class="catalog-view__switch">
-                <a href="" data-view="catalog-view-list">
-                  <svg width="16" height="16" fill="none">
-                    <use xlink:href="img/icons/icons.svg#icon-view-list"></use>
-                  </svg>
-                </a>
-                <a href="" class="active" data-view="catalog-view-tale">
-                  <svg width="16" height="16" fill="none">
-                    <use xlink:href="img/icons/icons.svg#icon-view-tale"></use>
-                  </svg>                  
-                </a>
-              </div>              
-            </div>
-            <div class="filter-sidebar">
-              <div class="group control">
-                <label for="">Search</label>
-                <input type="text" placeholder="Free text">
-              </div>
-              <div class="group select">
-                <label for="single">Category</label>
-                <select id="slim-select" class="slim-select">
-                  <option value="value 1">Value 1</option>
-                  <option value="value 2">Value 2</option>
-                  <option value="value 3">Value 333333333333 444444 5666666666</option>
-                </select>
-              </div> 
-              <div class="group select">
-                <label for="single">Brand</label>
-                <select id="slim-select" class="slim-select">
-                  <option value="value 1">Value 1</option>
-                  <option value="value 2">Value 2</option>
-                  <option value="value 3">Value 333333333333 444444 5666666666</option>
-                </select>
-              </div> 
-              <div class="group select">
-                <label for="single">Model</label>
-                <select id="slim-select" class="slim-select">
-                  <option value="value 1">Value 1</option>
-                  <option value="value 2">Value 2</option>
-                  <option value="value 3">Value 333333333333 444444 5666666666</option>
-                </select>
-              </div>
-              <div class="group select">
-                <label for="single">Year</label>
-                <div class="double-select">
-                  <select id="slim-select" class="slim-select">
-                    <option value="value 1">Value 1</option>
-                    <option value="value 2">Value 2</option>
-                    <option value="value 3">Value 333333333333 444444 5666666666</option>
-                  </select>
-                  <select id="slim-select" class="slim-select">
-                    <option value="value 1">Value 1</option>
-                    <option value="value 2">Value 2</option>
-                    <option value="value 3">Value 333333333333 444444 5666666666</option>
-                  </select>                                    
-                </div>
-              </div>
-              <div class="group">
-                <div class="currency-block">
-                  <label for="">Price</label>
-                  <ul class="currency">
-                    <li class="active"><a href="">$</a></li>
-                    <li><a href="">€</a></li>
-                    <li><a href="">kr</a></li>
-                  </ul>
-                </div>
-							  <div class="range-slider js-range" data-noui-min="15" data-noui-max="40" data-noui-step="1"></div> 
-                <div class="scale">
-                  <span class="min">0</span>
-                  <span class="max">max</span>
-                </div>               
-              </div>
-              <div class="group">
-                <label for="">Mileage (thousand km)</label>
-							  <div class="range-slider js-range" data-noui-min="30" data-noui-max="100" data-noui-step="1"></div>
-                <div class="scale">
-                  <span class="min">0</span>
-                  <span class="max">max</span>
-                </div>                
-              </div>               
-              <div class="group">
-                <label for="">Number of seats</label>
-							  <div class="range-slider js-range" data-noui-min="40" data-noui-max="55" data-noui-step="1"></div>
-                <div class="scale">
-                  <span class="min">0</span>
-                  <span class="max">max</span>
-                </div>                 
-              </div>  
-              <div class="group">
-                <label for="">Equipment</label>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="" checked>
-                  <label class="form-label" for="">Alcolock</label>                  
-                </div>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="">
-                  <label class="form-label" for="">KLIMA</label>                  
-                </div>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="">
-                  <label class="form-label" for="">3P Seatbelts</label>                  
-                </div> 
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="">
-                  <label class="form-label" for="">SEATBELTS</label>                  
-                </div>                                                
-              </div> 
-              <div class="group">
-                <label for="">Transmission</label>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="" checked>
-                  <label class="form-label" for="">Manual / Mechanics</label>                  
-                </div>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="">
-                  <label class="form-label" for="">Automaton</label>                  
-                </div>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="">
-                  <label class="form-label" for="">Tiptronic</label>                  
-                </div> 
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="">
-                  <label class="form-label" for="">Robot</label>                  
-                </div>                                         
-              </div> 
-              <div class="group select">
-                <label for="single">Emission class</label>
-                <select id="slim-select" class="slim-select">
-                  <option value="value 1">EURO5</option>
-                  <option value="value 2">Value 2</option>
-                  <option value="value 3">Value 333333333333 444444 5666666666</option>
-                </select>
-              </div>
-              <div class="group">
-                <label for="">Ad type</label>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="" checked>
-                  <label class="form-label" for="">For sale</label>                  
-                </div>
-                <div class="group check">
-                  <input class="checkbox" type="checkbox" id="">
-                  <label class="form-label" for="">For rent</label>                  
-                </div>                                         
-              </div> 
-              <button class="btn blue">Search</button>                                                        
-            </div>
-            <div>
-              <ul class="product_list catalog-view-tale active">
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+			<div class="container">
+				<div class="breadcrumbs">
+					<a href="">Home</a>
+					<a href="" class="cur-page">Comparison</a>
+				</div>
+				<div class="products-content">
+					<div></div>
+					<div class="overlay"></div>
+					<div class="catalog-heading">
+						<h1>Products</h1>
+					</div>
+					<div class="filter-heading">
+						<h3>Filters</h3>
+						<a href="" class="clear">Clear</a>
+					</div>
+					<div class="catalog-list-heading">
+						<span>67 Products</span>
+						<div class="catalog-view__switch">
+							<a href="" data-view="catalog-view-list">
+								<svg width="16" height="16" fill="none">
+									<use xlink:href="img/icons/icons.svg#icon-view-list"></use>
+								</svg>
+							</a>
+							<a href="" class="active" data-view="catalog-view-tale">
+								<svg width="16" height="16" fill="none">
+									<use xlink:href="img/icons/icons.svg#icon-view-tale"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="filter-sidebar">
+						<div class="group control">
+							<label for="">Search</label>
+							<input type="text" placeholder="Free text">
+						</div>
+						<div class="group select">
+							<label for="single">Category</label>
+							<select id="slim-select" class="slim-select">
+								<option value="value 1">Value 1</option>
+								<option value="value 2">Value 2</option>
+								<option value="value 3">Value 333333333333 444444 5666666666</option>
+							</select>
+						</div>
+						<div class="group select">
+							<label for="single">Brand</label>
+							<select id="slim-select" class="slim-select">
+								<option value="value 1">Value 1</option>
+								<option value="value 2">Value 2</option>
+								<option value="value 3">Value 333333333333 444444 5666666666</option>
+							</select>
+						</div>
+						<div class="group select">
+							<label for="single">Model</label>
+							<select id="slim-select" class="slim-select">
+								<option value="value 1">Value 1</option>
+								<option value="value 2">Value 2</option>
+								<option value="value 3">Value 333333333333 444444 5666666666</option>
+							</select>
+						</div>
+						<div class="group select">
+							<label for="single">Year</label>
+							<div class="double-select">
+								<select id="slim-select" class="slim-select">
+									<option value="value 1">Value 1</option>
+									<option value="value 2">Value 2</option>
+									<option value="value 3">Value 333333333333 444444 5666666666</option>
+								</select>
+								<select id="slim-select" class="slim-select">
+									<option value="value 1">Value 1</option>
+									<option value="value 2">Value 2</option>
+									<option value="value 3">Value 333333333333 444444 5666666666</option>
+								</select>
+							</div>
+						</div>
+						<div class="group">
+							<div class="currency-block">
+								<label for="">Price</label>
+								<ul class="currency">
+									<li class="active"><a href="">$</a></li>
+									<li><a href="">€</a></li>
+									<li><a href="">kr</a></li>
+								</ul>
+							</div>
+							<div class="range-slider js-range" data-noui-min="15" data-noui-max="40" data-noui-step="1"></div>
+							<div class="scale">
+								<span class="min">0</span>
+								<span class="max">max</span>
+							</div>
+						</div>
+						<div class="group">
+							<label for="">Mileage (thousand km)</label>
+							<div class="range-slider js-range" data-noui-min="30" data-noui-max="100" data-noui-step="1"></div>
+							<div class="scale">
+								<span class="min">0</span>
+								<span class="max">max</span>
+							</div>
+						</div>
+						<div class="group">
+							<label for="">Number of seats</label>
+							<div class="range-slider js-range" data-noui-min="40" data-noui-max="55" data-noui-step="1"></div>
+							<div class="scale">
+								<span class="min">0</span>
+								<span class="max">max</span>
+							</div>
+						</div>
+						<div class="group">
+							<label for="">Equipment</label>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="" checked>
+								<label class="form-label" for="">Alcolock</label>
+							</div>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="">
+								<label class="form-label" for="">KLIMA</label>
+							</div>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="">
+								<label class="form-label" for="">3P Seatbelts</label>
+							</div>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="">
+								<label class="form-label" for="">SEATBELTS</label>
+							</div>
+						</div>
+						<div class="group">
+							<label for="">Transmission</label>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="" checked>
+								<label class="form-label" for="">Manual / Mechanics</label>
+							</div>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="">
+								<label class="form-label" for="">Automaton</label>
+							</div>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="">
+								<label class="form-label" for="">Tiptronic</label>
+							</div>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="">
+								<label class="form-label" for="">Robot</label>
+							</div>
+						</div>
+						<div class="group select">
+							<label for="single">Emission class</label>
+							<select id="slim-select" class="slim-select">
+								<option value="value 1">EURO5</option>
+								<option value="value 2">Value 2</option>
+								<option value="value 3">Value 333333333333 444444 5666666666</option>
+							</select>
+						</div>
+						<div class="group">
+							<label for="">Ad type</label>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="" checked>
+								<label class="form-label" for="">For sale</label>
+							</div>
+							<div class="group check">
+								<input class="checkbox" type="checkbox" id="">
+								<label class="form-label" for="">For rent</label>
+							</div>
+						</div>
+						<button class="btn blue">Search</button>
+					</div>
+					<div>
+						<ul class="product_list catalog-view-tale active">
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card">
-                      <div class="swiper card-images new">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                        <div class="swiper-pagination swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card">
+									<div class="swiper card-images new">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+										<div class="swiper-pagination swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <h4 class="name">VOLVO 9500H B8R 4x</h4>
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Year:</p>
-                            <span>2010</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Emission:</p>
-                            <span>Euro 5</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage:</p>
-                            <span>974 175km</span>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Seats:</p>
-                            <span>50 places</span>
-                          </div>
-                        </div>
-                        <div class="block-wrapper">
-                          <h5 class="price">€ 113 050</h5>
-                          <button class="btn bordered">Details</button>
-                          <a href="#" class="img-wrapper">
-                            <img src="/img/icons/swiper/physics 1.svg" alt="">
-                            <div class="compare">
-                              <div> Compare with other </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                </li>                                
-              </ul>
-              <ul class="product_list catalog-view-list">
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<h4 class="name">VOLVO 9500H B8R 4x</h4>
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Year:</p>
+												<span>2010</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Emission:</p>
+												<span>Euro 5</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage:</p>
+												<span>974 175km</span>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats:</p>
+												<span>50 places</span>
+											</div>
+										</div>
+										<div class="block-wrapper">
+											<h5 class="price">€ 113 050</h5>
+											<button class="btn bordered">Details</button>
+											<a href="#" class="img-wrapper">
+												<img src="/img/icons/swiper/physics 1.svg" alt="">
+												<div class="compare">
+													<div> Compare with other </div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="product_list catalog-view-list">
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_good">Good</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_good">Good</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_average">Average</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_average">Average</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_excellent">Excellent</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_excellent">Excellent</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_poor">Poor</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_poor">Poor</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_good">Good</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_good">Good</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_average">Average</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_average">Average</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_excellent">Excellent</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_excellent">Excellent</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_poor">Poor</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_poor">Poor</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_good">Good</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_good">Good</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_average">Average</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_average">Average</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_excellent">Excellent</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>
-                <li>
-                  <div class="product-card view-list">
-                      <div class="swiper card-images">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                          <div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-next swiper-image"></div>
-                        <div class="swiper-button-prev swiper-image"></div>
-                      </div>
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_excellent">Excellent</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product-card view-list">
+									<div class="swiper card-images">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+											<div class="swiper-slide"><img src="/img/bus-img.png" alt=""></div>
+										</div>
+										<div class="swiper-button-next swiper-image"></div>
+										<div class="swiper-button-prev swiper-image"></div>
+									</div>
 
-                      <div class="bottom-content">
-                        <div class="block-wrapper">
-                          <div class="wrapper-item">
-                            <p>Brand: <span class="medium">Volvo</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Mileage: <span>974 175km</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Engine: <span>Diesel</span></p>
-                          </div>
-                          <div class="wrapper-item">
-                            <p>Price (€): <span>113 050</span></p>
-                          </div> 
-                          <div class="wrapper-item justify-content-end">
-                            <a href="#" class="img-wrapper">
-                              <img src="/img/icons/swiper/physics 1.svg" alt="">
-                              <div class="compare">
-                                <div> Compare with other </div>
-                              </div>
-                            </a>                            
-                          </div>                                                       
-                          <div class="wrapper-item">
-                            <p>Model: <span class="medium">9500H B8R 4x</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>Year: <span>2010</span></p>
-                          </div>  
-                          <div class="wrapper-item">
-                            <p>Seats: <span>50 places</span></p>
-                          </div> 
-                          <div class="wrapper-item">
-                            <p>State: <span class="medium state_poor">Poor</span></p>
-                          </div>
-                          <div class="wrapper-item justify-content-end">
-                            <button class="btn bordered">Details</button>
-                          </div>                          
-                        </div>                        
-                      </div>
-                    </div>                  
-                </li>                                                                                
-              </ul>
-              <nav aria-label="navigation" class="d-flex justify-content-center">
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>                  
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                </ul>
-              </nav>
-            </div>              
-          </div>
-      </div>
-
+									<div class="bottom-content">
+										<div class="block-wrapper">
+											<div class="wrapper-item">
+												<p>Brand: <span class="medium">Volvo</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Mileage: <span>974 175km</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Engine: <span>Diesel</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Price (€): <span>113 050</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<a href="#" class="img-wrapper">
+													<img src="/img/icons/swiper/physics 1.svg" alt="">
+													<div class="compare">
+														<div> Compare with other </div>
+													</div>
+												</a>
+											</div>
+											<div class="wrapper-item">
+												<p>Model: <span class="medium">9500H B8R 4x</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Year: <span>2010</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>Seats: <span>50 places</span></p>
+											</div>
+											<div class="wrapper-item">
+												<p>State: <span class="medium state_poor">Poor</span></p>
+											</div>
+											<div class="wrapper-item justify-content-end">
+												<button class="btn bordered">Details</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<nav aria-label="navigation" class="d-flex justify-content-center">
+							<ul class="pagination">
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item active"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
 		</div>
-    <div class="popular">
-      <div class="container">
-        <div class="title">
-          <h2>Popular busses</h2>
-        </div>
-        <!-- @import "cards.kit" -->        
-      </div>
-    </div>
+		<div class="popular">
+			<div class="container">
+				<div class="title">
+					<h2>Popular busses</h2>
+				</div>
+				<!-- @import "cards.kit" -->
+			</div>
+		</div>
 		<!-- @import "main-kit/footer.kit" -->
 	</div>
 	<!-- @import "main-kit/js.kit" -->
+	<script>
+		if (window.innerWidth < 650) {
+			let sideBar = document.querySelector('.filter-sidebar');
+			let windowBg = document.querySelector('.products-content');
+			let overlay = document.querySelector('.overlay');
+			let searchBtn = document.querySelector('.filter-sidebar .btn');
+
+			document.querySelector('.filter-heading h3').addEventListener('click', function () {
+				if (!sideBar.classList.contains('active')) {
+					windowBg.classList.add('active');
+					sideBar.classList.add('active');
+				}
+			});
+			overlay.addEventListener('click', function () {
+				if (sideBar.classList.contains('active') && sideBar) {
+					windowBg.classList.remove('active');
+					sideBar.classList.remove('active');
+				}
+			});
+			searchBtn.addEventListener('click', function () {
+				if (sideBar.classList.contains('active') && sideBar) {
+					windowBg.classList.remove('active');
+					sideBar.classList.remove('active');
+				}
+			});
+		}
+	</script>
 </body>
 
 </html>
